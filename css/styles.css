@@ -1417,9 +1417,14 @@ img {
 html.modal-open,
 body.modal-open {
   overflow: hidden !important;
-  height: 100vh !important;
-  height: 100dvh !important;
-  touch-action: none;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html.modal-open::-webkit-scrollbar,
+body.modal-open::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
 }
 
 .modal-overlay {
@@ -1447,8 +1452,21 @@ body.modal-open {
 }
 
 .modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.modal-overlay,
+.modal-content {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE / Edge Legacy */
+}
+
+.modal-overlay::-webkit-scrollbar,
+.modal-content::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera y Edge Chromium */
+  width: 0 !important;
+  height: 0 !important;
 }
 
 .modal-content {
@@ -1680,6 +1698,25 @@ body.modal-open {
   outline: none;
   border-color: var(--color-primary-dark);
   box-shadow: 0 0 0 3px rgba(8, 75, 131, 0.15);
+}
+
+.recaptcha-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.g-recaptcha {
+  transform: scale(0.92);
+  transform-origin: center center;
+}
+
+@media (max-width: 480px) {
+  .g-recaptcha {
+    transform: scale(0.82);
+  }
 }
 
 .btn-submit {

@@ -221,7 +221,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Quote Request Modal Controls
+  /* ==========================================================================
+     5. CONFIGURACIÓN Y CREDENCIALES OFICIALES DE EMAILJS (FORMULARIO DE COTIZACIÓN)
+     ==========================================================================
+     A continuación se encuentran las 3 credenciales oficiales de tu cuenta EmailJS:
+     
+     🔑 PUBLIC KEY:   '8ASele9YPLw4Re73X'  (Llave pública de tu cuenta de EmailJS)
+     📧 SERVICE ID:   'service_vpbacc4'   (ID del servicio de Gmail vinculado)
+     📄 TEMPLATE ID:  'template_8cl006p'  (ID de la plantilla creada en EmailJS)
+     
+     Mapeo exacto de las variables de tu plantilla {{...}}:
+     - {{empresa}}  ➔ Nombre de la Empresa ingresado en el formulario
+     - {{nombre}}   ➔ Nombre de Contacto ingresado en el formulario
+     - {{telefono}} ➔ Teléfono / WhatsApp ingresado
+     - {{email}}    ➔ Correo Electrónico ingresado
+     - {{servicio}} ➔ Servicio Requerido seleccionado en el menú
+     - {{tiempo}}   ➔ Fecha y hora exacta en que el usuario envió la solicitud
+     ========================================================================== */
+
+  // --- CREDENCIALES DE EMAILJS Y GOOGLE RECAPTCHA (CONFIGURADAS Y ACTIVAS) ---
+  const EMAILJS_PUBLIC_KEY = '8ASele9YPLw4Re73X';  // <--- TU PUBLIC KEY DE EMAILJS
+  const EMAILJS_SERVICE_ID = 'service_vpbacc4';   // <--- TU SERVICE ID DE GMAIL
+  const EMAILJS_TEMPLATE_ID = 'template_8cl006p';  // <--- TU TEMPLATE ID DE EMAILJS
+
+  // 🤖 Clave del Sitio de Google reCAPTCHA v2 Estándar (Casilla "No soy un robot") Oficial de Grupo GH Strategy
+  const RECAPTCHA_SITE_KEY = '6LeQlogtAAAAANEN3AUWr4u9D_psbQSshSFAoNcZ';
+
+  // Inicialización del SDK de EmailJS en el navegador
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  }
+
+  // --- ELEMENTOS DOM DEL MODAL DE COTIZACIÓN ---
   const quoteModal = document.getElementById('quoteModal');
   const modalClose = document.getElementById('modalClose');
   const openModalBtns = document.querySelectorAll('.open-modal-btn');
@@ -262,21 +293,101 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Quote Form Submission Toast Notification
+  // Quote Form Submission with EmailJS Integration & Live Indicators
   if (quoteForm) {
     quoteForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      closeModal();
 
-      // Show toast notification
-      if (toastNotification) {
-        toastNotification.classList.add('active');
-        setTimeout(() => {
-          toastNotification.classList.remove('active');
-        }, 4000);
+      const inputEmpresa = document.getElementById('inputEmpresa');
+      const inputContacto = document.getElementById('inputContacto');
+      const inputTelefono = document.getElementById('inputTelefono');
+      const inputEmail = document.getElementById('inputEmail');
+      const selectServicio = document.getElementById('selectServicio');
+      const submitBtn = quoteForm.querySelector('.btn-submit');
+
+      const originalBtnText = submitBtn ? submitBtn.innerText : 'ENVIAR SOLICITUD';
+
+      // Formatear Fecha y Hora de El Salvador para {{tiempo}}
+      const now = new Date();
+      const formattedTime = now.toLocaleDateString('es-SV', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      }) + ' ' + now.toLocaleTimeString('es-SV', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+      });
+
+      // Obtener el objeto de reCAPTCHA (Enterprise o Estándar v2)
+      const recaptchaObj = (typeof grecaptcha !== 'undefined' && grecaptcha.enterprise) ? grecaptcha.enterprise : (typeof grecaptcha !== 'undefined' ? grecaptcha : null);
+      const recaptchaToken = (recaptchaObj && typeof recaptchaObj.getResponse === 'function') ? recaptchaObj.getResponse() : '';
+
+      // Exigir estrictamente que el usuario haya marcado la casilla "No soy un robot"
+      if (!recaptchaToken) {
+        alert('Por favor marca la casilla "No soy un robot" antes de enviar la solicitud.');
+        return;
       }
 
-      quoteForm.reset();
+      // Mapeo exacto de los campos de la plantilla de EmailJS + Token de reCAPTCHA
+      const templateParams = {
+        empresa: inputEmpresa ? inputEmpresa.value.trim() : '',
+        nombre: inputContacto ? inputContacto.value.trim() : '',
+        telefono: inputTelefono ? inputTelefono.value.trim() : '',
+        email: inputEmail ? inputEmail.value.trim() : '',
+        servicio: selectServicio && selectServicio.selectedIndex >= 0 ? selectServicio.options[selectServicio.selectedIndex].text : '',
+        tiempo: formattedTime,
+        'g-recaptcha-response': recaptchaToken
+      };
+
+      // Indicador de carga en el botón
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Enviando solicitud...';
+      }
+
+      const handleSuccess = () => {
+        closeModal();
+        if (recaptchaObj && typeof recaptchaObj.reset === 'function') {
+          try { recaptchaObj.reset(); } catch(e) {}
+        }
+        if (toastNotification) {
+          toastNotification.innerText = '¡Gracias! Tu solicitud ha sido enviada con éxito a nuestro equipo.';
+          toastNotification.classList.add('active');
+          setTimeout(() => {
+            toastNotification.classList.remove('active');
+          }, 4500);
+        }
+        quoteForm.reset();
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
+        }
+      };
+
+      const handleError = (error) => {
+        console.error('Error enviando correo con EmailJS:', error);
+        alert('Hubo un inconveniente al enviar la solicitud. Por favor intenta de nuevo o contáctanos a gh@grupoghstrategy.com');
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
+        }
+      };
+
+      // Verificar disponibilidad del SDK de EmailJS
+      if (typeof emailjs === 'undefined') {
+        handleError('EmailJS SDK no disponible');
+        return;
+      }
+
+      // Envío de correo mediante EmailJS SDK
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+        .then(() => {
+          handleSuccess();
+        })
+        .catch((err) => {
+          handleError(err);
+        });
     });
   }
 

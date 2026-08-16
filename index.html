@@ -12,8 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- Google reCAPTCHA v2 API (Casilla "No soy un robot") -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css?v=3.0">
+  <link rel="stylesheet" href="css/styles.css?v=11.0">
 </head>
 <body>
 
@@ -751,7 +754,7 @@
     </section>
   </main>
 
-  <!-- ==========================================================================
+<!-- ==========================================================================
        QUOTE REQUEST MODAL (Con isotipo / logotipo de la empresa)
        ========================================================================== -->
   <div class="modal-overlay" id="quoteModal">
@@ -801,6 +804,11 @@
             <option value="flota_dedicada">Flota Dedicada</option>
             <option value="logistica_inversa">Logística Inversa</option>
           </select>
+        </div>
+
+        <!-- Google reCAPTCHA v2 (Casilla "No soy un robot") -->
+        <div class="form-group recaptcha-group">
+          <div class="g-recaptcha" data-sitekey="6LeQlogtAAAAANEN3AUWr4u9D_psbQSshSFAoNcZ" id="recaptchaWidget"></div>
         </div>
 
         <button type="submit" class="btn-submit">ENVIAR SOLICITUD</button>
@@ -894,7 +902,12 @@
     ¡Gracias! Tu solicitud ha sido enviada con éxito.
   </div>
 
-  <!-- Main JavaScript File -->
-  <script src="js/main.js?v=3.0"></script>
+  <!-- ==========================================================================
+       EMAILJS BROWSER SDK (Librería Oficial para envío de correos desde el navegador)
+       ========================================================================== -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Script interactivo principal (js/main.js) donde se configuran tus 3 credenciales de EmailJS -->
+  <script src="js/main.js?v=19.0"></script>
 </body>
 </html>
