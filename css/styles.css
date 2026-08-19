@@ -495,6 +495,11 @@ img {
   justify-content: center;
   padding: 32px 0 20px;
   background-color: var(--color-ice-bg);
+  background-image: linear-gradient(rgba(244, 247, 250, 0.82), rgba(244, 247, 250, 0.88)), url('../assets/upscalemedia-transformed.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   scroll-margin-top: 64px;
 }
 
@@ -1125,49 +1130,147 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 0;
-  background-color: var(--color-white);
+  padding: 48px 0;
+  background-color: var(--color-ice-bg);
+  background-image: linear-gradient(rgba(244, 247, 250, 0.85), rgba(244, 247, 250, 0.90)), url('../assets/upscalemedia-transformed.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   scroll-margin-top: 64px;
+}
+
+.about-main-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.about-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-paragraphs {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-paragraphs p {
+  color: #334155;
+  font-size: 0.94rem;
+  line-height: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.about-paragraphs strong {
+  color: var(--color-primary-dark);
+  font-weight: var(--weight-bold);
+}
+
+.about-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-image-panel {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(8, 75, 131, 0.16);
+  border: 1px solid rgba(8, 75, 131, 0.15);
+  max-height: 250px;
+}
+
+.about-panel-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image-panel:hover .about-panel-img {
+  transform: scale(1.03);
+}
+
+.about-badge-floating {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 10;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: var(--weight-extrabold);
+  letter-spacing: 0.6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .mv-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  margin-top: 28px;
+  gap: 20px;
 }
 
 .mv-card {
-  background: var(--color-ice-bg);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(8, 75, 131, 0.15);
   border-radius: 20px;
-  padding: 32px 36px;
+  padding: 24px 26px;
   transition: var(--transition);
+  box-shadow: 0 4px 18px rgba(8, 75, 131, 0.06);
 }
 
 .mv-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(8, 75, 131, 0.14);
+  border-color: var(--color-primary-light);
+}
+
+.mv-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--color-ice-bg);
+  border: 1px solid rgba(129, 184, 230, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(8, 75, 131, 0.08);
 }
 
 .mv-icon {
-  width: 44px;
-  height: 44px;
+  width: 26px;
+  height: 26px;
   color: var(--color-primary-dark);
-  margin-bottom: 14px;
 }
 
 .mv-card h3 {
-  font-size: 1.4rem;
-  font-weight: var(--weight-bold);
+  font-size: 1.3rem;
+  font-weight: var(--weight-extrabold);
   color: var(--color-primary-dark);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .mv-card p {
-  font-size: 0.94rem;
-  color: var(--color-text-muted);
-  line-height: 1.6em;
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.55em;
+  font-weight: 400;
+  letter-spacing: 0.2px;
 }
 
 /* ==========================================================================
@@ -1359,6 +1462,18 @@ img {
   font-size: 0.85rem;
   font-weight: var(--weight-bold);
   color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.footer-info-item:hover {
+  color: #0284c7;
+  transform: translateX(2px);
+}
+
+.footer-info-item:hover span {
+  text-decoration: underline;
 }
 
 .footer-info-item svg {
@@ -1821,6 +1936,12 @@ body.modal-open::-webkit-scrollbar {
     flex-direction: column;
     gap: 16px;
     text-align: center;
+  }
+
+  .about-main-layout,
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
