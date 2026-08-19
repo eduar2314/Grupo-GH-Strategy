@@ -582,41 +582,60 @@
     </section>
 
     <!-- ==========================================================================
-         ABOUT US SECTION (Manual Pág. 05, 06, 07)
+         ABOUT US SECTION (Reorganizado según diseño de referencia)
          ========================================================================== -->
     <section class="section-about" id="nosotros">
       <div class="container">
-        <div class="section-header" style="max-width: 880px;">
-          <span class="section-subtitle">¿QUIÉNES SOMOS?</span>
-          <h2 class="section-title">Grupo GH Strategy</h2>
-          <p style="color: var(--color-text-muted); font-size: 1.05rem; margin-top: 18px; line-height: 1.65em;">
-            Desde nuestra fundación en 2017, en Grupo GH Strategy nos hemos consolidado como un referente en el sector de transporte y logística integral. Somos una empresa comprometida en conectar organizaciones y optimizar sus cadenas de distribución a través de soluciones eficientes y personalizadas.
-          </p>
-          <p style="color: var(--color-text-muted); font-size: 1.05rem; margin-top: 16px; line-height: 1.65em;">
-            Entendemos que la puntualidad y la seguridad son fundamentales para el crecimiento de nuestros clientes; por ello, basamos cada uno de nuestros servicios en tres pilares clave: cumplimiento estricto de los tiempos acordados, supervisión y monitoreo constante de cada unidad, y un compromiso inquebrantable con la calidad e integridad de la carga en cada entrega.
-          </p>
-        </div>
-
-        <div class="mv-grid">
-          <!-- Misión Oficial -->
-          <div class="mv-card">
-            <svg class="mv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <circle cx="12" cy="12" r="6"></circle>
-              <circle cx="12" cy="12" r="2"></circle>
-            </svg>
-            <h3>Misión</h3>
-            <p>Asegurar y fortalecer la confianza de nuestros clientes proporcionando un servicio de transporte logístico altamente eficiente, puntual y rigurosamente controlado. Nos dedicamos a optimizar los procesos de entrega mediante la gestión estratégica, el monitoreo continuo y un equipo comprometido con la excelencia operativa en cada trayecto.</p>
+        <div class="about-main-layout">
+          <!-- Columna Izquierda: Títulos + 3 Párrafos completos -->
+          <div class="about-text-col">
+            <span class="section-subtitle">¿QUIÉNES SOMOS?</span>
+            <h2 class="section-title">Grupo GH Strategy</h2>
+            <div class="about-paragraphs">
+              <p>Desde nuestra fundación en 2017, en <strong>Grupo GH Strategy</strong> hemos construido una trayectoria basada en la confianza, la eficiencia y el compromiso con nuestros clientes. Somos una empresa especializada en <strong>transporte y logística integral</strong>, enfocada en conectar organizaciones y brindar soluciones que optimicen sus operaciones y cadenas de distribución.</p>
+              <p>Entendemos que, en el sector logístico, <strong>cada entrega representa un compromiso</strong>. Por ello, trabajamos para ofrecer un servicio confiable, seguro y eficiente, adaptándonos a las necesidades específicas de cada cliente y operación.</p>
+              <p>Nuestro servicio se sustenta en tres pilares fundamentales: <strong>cumplimiento</strong>, garantizando los tiempos de entrega acordados; <strong>control y seguridad</strong>, mediante la supervisión y monitoreo constante de nuestras unidades; y <strong>calidad</strong>, asegurando el manejo responsable e íntegro de cada carga desde su origen hasta su destino.</p>
+              <p>En Grupo GH Strategy no solo transportamos mercancías; <strong>conectamos negocios, facilitamos operaciones y contribuimos al crecimiento de nuestros clientes</strong>, convirtiéndonos en un aliado estratégico para sus necesidades de transporte y logística.</p>
+            </div>
           </div>
 
-          <!-- Visión Oficial -->
-          <div class="mv-card">
-            <svg class="mv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-            <h3>Visión</h3>
-            <p>Convertirnos en el aliado estratégico de transporte y distribución más confiable e innovador a nivel nacional. Aspiramos a ser reconocidos por la calidad de nuestras operaciones, la excelencia en el servicio al cliente y nuestra capacidad de adaptarnos a las necesidades dinámicas del mercado, impulsando el crecimiento sostenible de las empresas que confían en nosotros.</p>
+          <!-- Columna Derecha: Imagen Grande (Arriba) + Tarjetas Misión y Visión (Abajo) -->
+          <div class="about-right-col">
+            <!-- Panel de Imagen Superior Derecha con Badge Flotante -->
+            <div class="about-image-panel">
+              <div class="about-badge-floating">
+                <span>Desde 2017: Conectando El Salvador</span>
+              </div>
+              <img src="assets/Camiones-Carretera.png" alt="Logística y Transporte Grupo GH Strategy" class="about-panel-img">
+            </div>
+
+            <!-- Tarjetas Inferiores Lado a Lado (Misión y Visión) -->
+            <div class="mv-grid">
+              <!-- Tarjeta Misión -->
+              <div class="mv-card">
+                <div class="mv-icon-wrapper">
+                  <svg class="mv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+                <h3>Misión</h3>
+                <p>Asegurar la confianza de nuestros clientes mediante un servicio de transporte eficiente, puntual y controlado.</p>
+              </div>
+
+              <!-- Tarjeta Visión -->
+              <div class="mv-card">
+                <div class="mv-icon-wrapper">
+                  <svg class="mv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <h3>Visión</h3>
+                <p>Convertirnos en el aliado estratégico de transporte más confiable para empresas a nivel nacional.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -709,38 +728,38 @@
             <div class="footer-contact-grid">
               <!-- Columna 1: Ubicación y Teléfono -->
               <div class="footer-info-col">
-                <div class="footer-info-item">
+                <a href="https://maps.google.com/?q=San+Salvador,+El+Salvador" target="_blank" rel="noopener" class="footer-info-item" title="Ver ubicación en Google Maps">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                   <span>San Salvador - El Salvador</span>
-                </div>
-                <div class="footer-info-item">
+                </a>
+                <a href="https://wa.me/50369958735" target="_blank" rel="noopener" class="footer-info-item" title="Contactar por WhatsApp o Teléfono">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
                   <span>(+503) 6995-8735</span>
-                </div>
+                </a>
               </div>
 
               <!-- Columna 2: Correo y Sitio Web -->
               <div class="footer-info-col">
-                <div class="footer-info-item">
+                <a href="mailto:gh@grupoghstrategy.com" class="footer-info-item" title="Enviar correo electrónico">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                   <span>gh@grupoghstrategy.com</span>
-                </div>
-                <div class="footer-info-item">
+                </a>
+                <a href="https://www.grupoghstrategy.com" target="_blank" rel="noopener" class="footer-info-item" title="Visitar sitio web oficial">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="2" y1="12" x2="22" y2="12"></line>
                     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                   </svg>
                   <span>www.grupoghstrategy.com</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
