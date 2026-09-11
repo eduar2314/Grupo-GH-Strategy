@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Grupo GH Strategy | GH Express - Entrega segura, EMPRESA TRANQUILA. Soluciones de transporte y logística empresarial en El Salvador.">
+  <meta name="keywords" content="Grupo GH Strategy, GH Express, logística El Salvador, transporte de carga, distribución empresarial, entregas seguras">
+  <title>Grupo GH Strategy | Entrega segura, EMPRESA TRANQUILA</title>
+
+  <!-- Google Fonts: Poppins (ExtraBold 800, Bold 700, Medium 500, Regular 400, Light 300) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Google reCAPTCHA v2 API (Casilla "No soy un robot") -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=11.0">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       INITIAL PRELOADER / SPLASH SCREEN (Pantalla de Carga Inicial)
+       ========================================================================== -->
+  <div class="preloader-overlay" id="preloader">
+    <div class="preloader-content">
+      <!-- Logotipo Oficial Blanco Animado -->
+      <img src="assets/LOGO BLANCO - SIN FONDO_Mesa de trabajo 1.png" alt="Grupo GH Strategy Logo" class="preloader-logo">
+      
+      <!-- Barra de Progreso Delgado Celeste (#38bdf8) -->
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar" id="preloaderBar"></div>
+      </div>
+      <span class="preloader-text">Cargando experiencia logística...</span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER & NAVBAR (Manual Pág. 09 y 10)
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Logo Oficial GH Strategy (Sin Fondo) -->
+      <a href="#" class="brand-logo" aria-label="Grupo GH Strategy Inicio">
+        <img src="assets/LOGO BLANCO - SIN FONDO_Mesa de trabajo 1.png" alt="Grupo GH Strategy Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#cobertura" class="nav-link">Cobertura</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contáctanos</a>
+        <a href="#quoteModal" class="btn-nav-cta open-modal-btn">Cotizar Operación</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        &#9776;
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Con imagen hero-bg.jfif en color natural)
+         ========================================================================== -->
+    <section class="hero" id="inicio">
+      <!-- Background Image Oficial Hero -->
+      <img src="assets/hero-bg.jpeg" alt="Camión de carga GH Strategy en carretera de El Salvador" class="hero-bg">
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Main Hero Content -->
+          <div class="hero-card">
+            <div class="official-slogan-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Entrega segura, EMPRESA TRANQUILA</span>
+            </div>
+            <h1 class="hero-title">Somos tu <span>SOCIO LOGÍSTICO</span> estratégico</h1>
+            <p class="hero-description">
+              Garantizamos a tu empresa la tranquilidad de que sus entregas llegarán siempre a tiempo, con supervisión activa y calidad en cada trayecto a nivel nacional.
+            </p>
+            <button class="btn-primary open-modal-btn">
+              <span>SOLICITAR COTIZACIÓN DE OPERACIÓN</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Sidebar Guarantees (Manual Pág. 07 - Valores de Marca) -->
+          <aside class="guarantee-sidebar">
+            <span class="guarantee-brand">GH | STRATEGY</span>
+            <p class="guarantee-intro">Garantía de cumplimiento, supervisión y calidad en cada entrega.</p>
+            
+            <div class="guarantee-item">
+              <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span class="guarantee-label">PUNTUALIDAD</span>
+            </div>
+
+            <div class="guarantee-item">
+              <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              </svg>
+              <span class="guarantee-label">EFICIENCIA</span>
+            </div>
+
+            <div class="guarantee-item">
+              <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <span class="guarantee-label">CONTROL</span>
+            </div>
+
+            <div class="guarantee-item">
+              <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span class="guarantee-label">SEGURIDAD</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES SECTION (Carrusel Interactivo de 1 sola Fila)
+         ========================================================================== -->
+    <section class="section-services" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">NUESTROS SERVICIOS</span>
+          <h2 class="section-title">Logística hecha para la tranquilidad de tu empresa.</h2>
+        </div>
+
+        <!-- Carrusel Wrapper con Flechas Laterales Exteriores -->
+        <div class="services-carousel-wrapper">
+          <!-- Flecha Izquierda Exterior -->
+          <button class="carousel-nav-btn prev-btn" id="carouselPrev" aria-label="Ver servicio anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+
+          <div class="services-carousel-track" id="servicesTrack">
+
+            <!-- Card 1: Distribución Nacional -->
+            <article class="service-card-v2">
+              <span class="service-pill-top">RUTA GH STRATEGY</span>
+              
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="15" height="13"></rect>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+              </div>
+
+              <h3 class="service-title-v2">Distribución Nacional</h3>
+              <p class="service-desc-v2">Entrega confiable para empresas que necesitan llegar a todo El Salvador con monitoreo activo y control estricto de carga.</p>
+
+              <div class="service-benefits-block">
+                <span class="benefits-heading">Beneficios Clave:</span>
+                <div class="benefits-list">
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Cobertura Nacional 100%</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>GPS y Monitoreo Activo</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Puntualidad Garantizada</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2: Rutas Programadas -->
+            <article class="service-card-v2">
+              <span class="service-pill-top">LOGÍSTICA PLANIFICADA</span>
+              
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+
+              <h3 class="service-title-v2">Rutas Programadas</h3>
+              <p class="service-desc-v2">Operación planificada que protege tus tiempos de entrega y garantiza la continuidad operacional de tus envíos empresariales.</p>
+
+              <div class="service-benefits-block">
+                <span class="benefits-heading">Beneficios Clave:</span>
+                <div class="benefits-list">
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Frecuencia Semanal y Diaria</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Horarios Exactos de Despacho</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Cero Retrasos Operativos</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3: Distribución Empresarial -->
+            <article class="service-card-v2">
+              <span class="service-pill-top">CARGA COMERCIAL</span>
+              
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+
+              <h3 class="service-title-v2">Distribución Empresarial</h3>
+              <p class="service-desc-v2">Soluciones de transporte de carga comercial adaptadas a los volúmenes y requerimientos de cada compañía salvadoreña.</p>
+
+              <div class="service-benefits-block">
+                <span class="benefits-heading">Beneficios Clave:</span>
+                <div class="benefits-list">
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Adaptado a Altos Volúmenes</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Manejo Especial de Insumos</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Supervisión Directa de Carga</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4: Almacenamiento Temporal -->
+            <article class="service-card-v2">
+              <span class="service-pill-top">ALMACÉN & GESTIÓN</span>
+              
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+
+              <h3 class="service-title-v2">Almacenamiento Temporal</h3>
+              <p class="service-desc-v2">Custodia segura de mercadería e insumos previa a la salida de ruta con supervisión constante y control estricto.</p>
+
+              <div class="service-benefits-block">
+                <span class="benefits-heading">Beneficios Clave:</span>
+                <div class="benefits-list">
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Custodia y Seguridad 24/7</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Control de Inventario Pre-Ruta</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Despacho Ágil e Inmediato</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5: Logística Inversa -->
+            <article class="service-card-v2">
+              <span class="service-pill-top">DEVOLUCIONES & RETORNO</span>
+              
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="1 4 1 10 7 10"></polyline>
+                  <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                </svg>
+              </div>
+
+              <h3 class="service-title-v2">Logística Inversa</h3>
+              <p class="service-desc-v2">Retorno eficiente de bienes, recolección de devoluciones y reacondicionamiento de carga estratégica empresarial.</p>
+
+              <div class="service-benefits-block">
+                <span class="benefits-heading">Beneficios Clave:</span>
+                <div class="benefits-list">
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Recolección Eficiente de Devoluciones</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Reacondicionamiento de Carga</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Optimización de Retornos</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6: Flota Dedicada -->
+            <article class="service-card-v2">
+              <span class="service-pill-top">UNIDADES EXCLUSIVAS</span>
+              
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+
+              <h3 class="service-title-v2">Flota Dedicada</h3>
+              <p class="service-desc-v2">Camiones y conductores capacitados en exclusiva para la frecuencia operativa que demanda tu compañía.</p>
+
+              <div class="service-benefits-block">
+                <span class="benefits-heading">Beneficios Clave:</span>
+                <div class="benefits-list">
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Conductores Certificados</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Unidades Exclusivas 100%</span>
+                  </div>
+                  <div class="benefit-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Flexibilidad de Horarios</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Flecha Derecha Exterior -->
+          <button class="carousel-nav-btn next-btn" id="carouselNext" aria-label="Ver siguiente servicio">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+
+          <!-- Puntos Indicadores de Navegación Abajo -->
+          <div class="carousel-dots-bottom" id="carouselDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COVERAGE & STATS SECTION (High-Fidelity Interactive Map & KPIs)
+         ========================================================================== -->
+    <section class="section-coverage" id="cobertura">
+      <div class="container">
+        <!-- Section Header (Fuera de la tarjeta blanca, igual a Servicios y Nosotros) -->
+        <div class="section-header">
+          <span class="section-subtitle">COBERTURA ESTRATÉGICA</span>
+          <h2 class="section-title">Conectando los 14 departamentos de El Salvador</h2>
+        </div>
+
+        <!-- Single Large Rounded Rectangular White Card -->
+        <div class="coverage-card-white">
+          <!-- Balanced Two-Column Content Grid -->
+          <div class="coverage-grid-two-col">
+            <!-- Left Column Content -->
+            <div class="coverage-left-col">
+              <p class="coverage-updated-desc">
+                Kilómetro a kilómetro, cubrimos cada rincón del país. <strong>Monitoreo en tiempo real</strong> y rutas optimizadas para garantizar <strong>tiempos óptimos de despacho</strong> entre los principales centros de comercio e industria de El Salvador.
+              </p>
+
+              <!-- Botón Secundario Contorneado (Oculto temporalmente) -->
+              <button type="button" class="btn-outline-secondary" id="openDeliveryModalBtn" style="display: none !important;" aria-hidden="true">
+                <span>Consultar Tiempos de Entrega</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <!-- Unified Dark Blue Informational Block (KPI Banner con 3 métricas verticales iguales) -->
+              <div class="coverage-kpi-banner">
+                <!-- Left Metric -->
+                <div class="kpi-metric-item">
+                  <span class="kpi-num">14</span>
+                  <span class="kpi-label">Departamentos en cobertura</span>
+                </div>
+                
+                <div class="kpi-divider"></div>
+
+                <!-- Middle Metric -->
+                <div class="kpi-metric-item">
+                  <span class="kpi-num">99.4%</span>
+                  <span class="kpi-label">Puntualidad comprobada</span>
+                </div>
+
+                <div class="kpi-divider"></div>
+
+                <!-- Right Metric (24/7 en tipografía grande) -->
+                <div class="kpi-metric-item">
+                  <span class="kpi-num">24/7</span>
+                  <span class="kpi-label">Monitoreo GPS en tiempo real</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column Content (Interactive Vectorial SVG Map Area) -->
+            <div class="coverage-right-col">
+              <div class="map-interactive-wrapper">
+                <!-- Única Fila de 3 Botones Regionales (ZONA OCCIDENTAL | ZONA CENTRAL | ZONA ORIENTAL) -->
+                <div class="regional-buttons-stack">
+                  <!-- Botón 1: Zona Occidental -->
+                  <button class="region-pill-btn" data-zone="occidental">
+                    <span>ZONA OCCIDENTAL</span>
+                  </button>
+
+                  <!-- Botón 2: Zona Central (Activa por defecto) -->
+                  <button class="region-pill-btn active" data-zone="central">
+                    <span>ZONA CENTRAL</span>
+                  </button>
+
+                  <!-- Botón 3: Zona Oriental -->
+                  <button class="region-pill-btn" data-zone="oriental">
+                    <span>ZONA ORIENTAL</span>
+                  </button>
+                </div>
+
+                <!-- Mapa SVG Interactivo Ampliado -->
+                <div class="svg-map-container">
+                  <svg viewBox="0 0 1100 600" class="el-salvador-official-map" xmlns="http://www.w3.org/2000/svg" id="esOfficialMap">
+  <!-- 🟠 ZONA OCCIDENTAL -->
+  <g class="map-zone zone-occidental" id="zoneOccidentalGroup">
+    <path id="path2261" d="M 189.50582,253.32754 L 189.50582,246.95254 L 189.50582,243.42129 L 189.50582,238.48379 L 194.44332,232.82754 L 197.97457,226.45254 L 196.56832,222.92129 L 198.69332,216.57754 L 199.41207,210.20254 L 199.41207,205.95254 L 195.88082,203.82754 L 190.91207,202.42129 L 189.50582,200.29629 L 188.78707,196.76504 L 188.09957,193.92129 L 184.56832,191.82754 L 182.44332,190.17129 L 182.44332,191.10879 L 175.34957,192.51504 L 160.50582,188.98379 L 154.16207,186.17129 L 151.31832,181.92129 L 146.38082,178.39004 L 142.13082,180.51504 L 138.59957,181.92129 L 132.94332,181.92129 L 130.81832,185.45254 L 125.84957,187.57754 L 118.78707,187.57754 L 113.13082,188.98379 L 108.88082,193.92129 L 106.06832,200.29629 L 101.13082,202.42129 L 96.162074,205.23379 L 96.162074,206.67129 L 94.037074,210.89004 L 82.037075,217.98379 L 75.662075,222.92129 L 69.287075,225.04629 L 64.349575,227.89004 L 63.630825,232.82754 L 58.693325,233.54629 L 55.162075,235.64004 L 53.037075,242.73379 L 52.318325,245.54629 L 52.318325,250.51504 L 46.662075,254.04629 L 33.224575,259.70254 L 29.693325,263.95254 L 29.005825,267.48379 L 24.755825,271.01504 L 20.505825,274.54629 L 16.974575,280.92129 L 19.099575,289.39004 L 14.849575,291.51504 L 13.443325,297.89004 L 13.443325,303.54629 L 17.662075,306.35879 L 21.912075,308.48379 L 21.912075,312.01504 L 25.443325,314.85879 L 24.755825,317.67129 L 21.224575,319.79629 L 15.568325,320.51504 L 12.005825,320.51504 L 9.9120754,322.64004 L 12.724575,323.32754 L 16.255825,324.73379 L 45.255825,336.76504 L 52.318325,338.17129 L 57.974575,341.01504 L 74.943325,348.79629 L 75.787075,349.32754 L 85.568325,348.79629 L 91.224574,348.79629 L 95.474574,344.54629 L 101.81832,338.89004 L 104.66207,334.64004 L 108.88082,333.23379 L 110.31832,335.35879 L 114.53707,340.29629 L 118.09957,343.14004 L 122.31832,344.54629 L 126.56832,346.67129 L 130.09957,350.92129 L 135.75582,350.92129 L 140.72457,348.79629 L 144.94332,347.39004 L 146.38082,338.89004 L 146.38082,336.07754 L 148.50582,328.98379 L 151.31832,323.32754 L 156.25582,318.39004 L 160.50582,317.67129 L 160.50582,312.73379 L 160.50582,309.89004 L 159.09957,304.95254 L 159.09957,300.70254 L 161.22457,293.64004 L 161.22457,286.57754 L 164.75582,279.48379 L 164.75582,275.95254 L 168.28707,271.01504 L 168.28707,268.17129 L 165.47457,265.35879 L 159.81832,260.39004 L 161.91207,254.04629 L 171.13082,254.04629 L 181.72457,253.32754 L 189.50582,253.32754 z " class="dept-path" />
+    <path id="path2256" d="M 301.41207,304.76504 L 293.44332,301.42129 L 280.00582,295.04629 L 265.88082,287.98379 L 260.91207,283.73379 L 255.97457,282.32754 L 252.44332,283.73379 L 247.47457,287.26504 L 247.47457,291.51504 L 244.66207,292.92129 L 238.28707,283.01504 L 225.56832,275.26504 L 217.78707,266.76504 L 215.66207,261.10879 L 211.41207,256.17129 L 202.94332,251.20254 L 196.56832,251.92129 L 190.22457,253.32754 L 181.72457,253.32754 L 171.13082,254.04629 L 161.91207,254.04629 L 159.81832,260.39004 L 165.47457,265.35879 L 168.28707,268.17129 L 168.28707,271.01504 L 164.75582,275.95254 L 164.75582,279.48379 L 161.22457,286.57754 L 161.22457,293.64004 L 159.09957,300.70254 L 159.09957,304.95254 L 160.50582,309.89004 L 160.50582,312.73379 L 160.50582,317.67129 L 156.25582,318.39004 L 151.31832,323.32754 L 148.50582,328.98379 L 146.38082,336.07754 L 146.38082,338.89004 L 144.94332,347.39004 L 140.72457,348.79629 L 135.75582,350.92129 L 130.09957,350.92129 L 126.56832,346.67129 L 122.31832,344.54629 L 118.09957,343.14004 L 114.53707,340.29629 L 110.31832,335.35879 L 108.88082,333.23379 L 104.66207,334.64004 L 101.81832,338.89004 L 95.474574,344.54629 L 91.224574,348.79629 L 85.568325,348.79629 L 75.787075,349.32754 L 80.599575,352.32754 L 89.099574,357.26504 L 95.474574,360.10879 L 103.94332,364.35879 L 109.59957,366.48379 L 113.13082,368.57754 L 116.66207,371.42129 L 125.16207,376.35879 L 132.94332,382.01504 L 138.59957,387.67129 L 140.00582,394.04629 L 142.84957,403.23379 L 144.25582,411.01504 L 146.38082,414.54629 L 154.16207,418.07754 L 163.34957,418.79629 L 173.25582,416.67129 L 179.59957,416.67129 L 185.25582,417.39004 L 191.63082,416.67129 L 201.53707,414.54629 L 208.59957,415.26504 L 224.84957,418.07754 L 234.75582,422.32754 L 234.88082,422.35879 L 236.88082,415.95254 L 238.28707,413.14004 L 243.25582,407.48379 L 248.19332,401.82754 L 254.56832,395.45254 L 258.78707,391.92129 L 259.50582,386.26504 L 260.91207,380.60879 L 260.91207,376.35879 L 265.16207,372.14004 L 270.09957,367.17129 L 272.94332,363.64004 L 273.66207,358.70254 L 275.78707,355.14004 L 274.34957,353.73379 L 272.22457,350.20254 L 274.34957,347.39004 L 277.19332,344.54629 L 281.44332,342.42129 L 286.38082,334.64004 L 287.78707,333.95254 L 291.31832,333.23379 L 291.31832,329.70254 L 292.03707,325.45254 L 298.41207,321.20254 L 304.75582,321.20254 L 306.16207,319.79629 L 308.28707,316.98379 L 310.41207,314.85879 L 309.72457,311.32754 L 307.59957,309.89004 L 304.06832,309.20254 L 301.94332,308.48379 L 299.09957,307.07754 L 301.41207,304.76504 z " class="dept-path" />
+    <path id="path2226" d="M 335.88082,10.077544 L 333.03707,10.796294 L 328.81832,12.202544 L 328.09957,15.733794 L 323.84957,20.702544 L 319.59957,22.108794 L 313.94332,22.108794 L 310.41207,19.265044 L 305.47457,19.265044 L 297.69332,19.983794 L 292.03707,22.108794 L 287.09957,24.233794 L 283.53707,27.046294 L 280.72457,33.421294 L 277.19332,34.827544 L 271.53707,35.546294 L 273.66207,32.702544 L 272.22457,28.483794 L 270.81832,25.640044 L 266.56832,24.233794 L 259.50582,25.640044 L 253.84957,28.483794 L 250.31832,34.827544 L 251.03707,39.796294 L 254.56832,41.921294 L 256.69332,44.733794 L 259.50582,46.858794 L 259.50582,50.390044 L 254.56832,51.796294 L 248.91207,56.765044 L 248.19332,62.421294 L 248.19332,66.640044 L 253.13082,66.640044 L 258.09957,65.233794 L 263.03707,67.358794 L 265.88082,72.327539 L 268.00582,80.796289 L 270.09957,88.577539 L 274.34957,94.952539 L 278.59957,100.60879 L 278.59957,106.95254 L 275.06832,111.20254 L 271.53707,109.79629 L 268.00582,108.39004 L 260.91207,112.60879 L 253.84957,118.26504 L 238.28707,119.70254 L 222.03707,123.92129 L 214.25582,128.89004 L 203.66207,135.23379 L 195.88082,145.14004 L 187.38082,157.17129 L 184.56832,167.07754 L 181.72457,180.51504 L 181.72457,184.73379 L 182.44332,188.98379 L 182.44332,190.17129 L 184.56832,191.82754 L 188.09957,193.92129 L 188.78707,196.76504 L 189.50582,200.29629 L 190.91207,202.42129 L 195.88082,203.82754 L 199.41207,205.95254 L 199.41207,210.20254 L 198.69332,216.57754 L 196.56832,222.92129 L 197.97457,226.45254 L 194.44332,232.82754 L 189.50582,238.48379 L 189.50582,243.42129 L 189.50582,246.95254 L 189.50582,253.32754 L 190.22457,253.32754 L 196.56832,251.92129 L 202.94332,251.20254 L 211.41207,256.17129 L 215.66207,261.10879 L 217.78707,266.76504 L 225.56832,275.26504 L 238.28707,283.01504 L 244.66207,292.92129 L 247.47457,291.51504 L 247.47457,287.26504 L 252.44332,283.73379 L 255.97457,282.32754 L 260.91207,283.73379 L 265.88082,287.98379 L 280.00582,295.04629 L 293.44332,301.42129 L 301.41207,304.76504 L 301.94332,304.23379 L 301.94332,300.70254 L 300.50582,299.29629 L 300.50582,295.04629 L 303.34957,292.23379 L 308.28707,290.79629 L 308.28707,288.67129 L 307.59957,286.57754 L 309.72457,282.32754 L 309.00582,280.92129 L 307.59957,279.48379 L 308.28707,276.67129 L 309.72457,275.95254 L 308.28707,273.14004 L 306.88082,271.01504 L 309.72457,265.35879 L 309.72457,263.23379 L 308.28707,258.98379 L 306.88082,256.17129 L 306.16207,254.04629 L 307.59957,248.39004 L 311.84957,242.01504 L 314.66207,239.20254 L 321.03707,237.76504 L 326.69332,234.23379 L 333.75582,229.98379 L 333.75582,226.45254 L 332.34957,220.10879 L 330.22457,218.67129 L 332.34957,213.01504 L 332.34957,210.20254 L 332.34957,205.95254 L 333.03707,202.42129 L 338.00582,198.17129 L 339.56832,193.82754 L 331.63082,192.51504 L 325.97457,192.51504 L 321.03707,191.82754 L 318.91207,188.98379 L 318.19332,181.92129 L 321.72457,174.14004 L 323.84957,170.60879 L 328.09957,167.07754 L 329.50582,165.64004 L 329.50582,160.70254 L 328.81832,157.85879 L 327.38082,153.64004 L 327.38082,150.79629 L 332.34957,149.39004 L 338.69332,145.14004 L 342.94332,139.48379 L 344.34957,136.67129 L 350.72457,135.23379 L 359.91207,131.70254 L 364.16207,131.01504 L 365.56832,127.45254 L 369.09957,123.92129 L 369.09957,120.39004 L 367.69332,117.57754 L 367.69332,114.73379 L 369.81832,111.92129 L 369.81832,109.07754 L 368.41207,106.95254 L 366.97457,103.42129 L 372.63082,98.483789 L 382.53707,95.640039 L 388.19332,92.108789 L 389.63082,84.327539 L 393.16207,78.671289 L 395.97457,71.608794 L 395.97457,68.077544 L 395.97457,64.546294 L 393.84957,61.702544 L 387.50582,57.452544 L 380.41207,53.233794 L 375.47457,49.671294 L 373.34957,42.608794 L 373.34957,38.358794 L 370.53707,35.546294 L 364.88082,30.577544 L 354.25582,22.827544 L 353.00582,19.983794 L 352.13082,19.983794 L 346.47457,17.858794 L 345.06832,13.608794 L 342.22457,14.327544 L 341.53707,16.452544 L 338.69332,16.452544 L 338.00582,14.327544 L 335.88082,10.077544 z " class="dept-path" />
+  </g>
+
+  <!-- 🟢 ZONA CENTRAL -->
+  <g class="map-zone zone-central active" id="zoneCentralGroup">
+    <path id="path1315" d="M 353.00582,19.983794 L 354.25582,22.827544 L 364.88082,30.577544 L 370.53707,35.546294 L 373.34957,38.358794 L 373.34957,42.608794 L 375.47457,49.671294 L 380.41207,53.233794 L 387.50582,57.452544 L 393.84957,61.702544 L 395.97457,64.546294 L 395.97457,68.077544 L 395.97457,71.608794 L 393.16207,78.671289 L 389.63082,84.327539 L 388.19332,92.108789 L 382.53707,95.640039 L 372.63082,98.483789 L 366.97457,103.42129 L 368.41207,106.95254 L 369.81832,109.07754 L 369.81832,111.92129 L 367.69332,114.73379 L 367.69332,117.57754 L 369.09957,120.39004 L 369.09957,123.92129 L 365.56832,127.45254 L 364.16207,131.01504 L 359.91207,131.70254 L 350.72457,135.23379 L 344.34957,136.67129 L 342.94332,139.48379 L 338.69332,145.14004 L 332.34957,149.39004 L 327.38082,150.79629 L 327.38082,153.64004 L 328.81832,157.85879 L 329.50582,160.70254 L 329.50582,165.64004 L 328.09957,167.07754 L 323.84957,170.60879 L 321.72457,174.14004 L 318.19332,181.92129 L 318.91207,188.98379 L 321.03707,191.82754 L 325.97457,192.51504 L 331.63082,192.51504 L 340.13082,193.92129 L 344.34957,193.92129 L 345.06832,193.92129 L 345.06832,190.39004 L 346.47457,185.45254 L 351.44332,183.32754 L 357.78707,181.20254 L 361.31832,180.51504 L 368.41207,178.39004 L 374.06832,180.51504 L 376.19332,184.73379 L 378.28707,185.45254 L 383.97457,184.73379 L 386.06832,184.73379 L 388.19332,186.17129 L 390.31832,187.57754 L 394.56832,186.17129 L 402.34957,184.73379 L 405.16207,185.45254 L 407.28707,187.57754 L 412.25582,189.70254 L 416.47457,187.57754 L 422.13082,185.45254 L 424.97457,185.45254 L 428.50582,188.26504 L 433.44332,188.26504 L 437.69332,184.73379 L 443.34957,181.20254 L 449.00582,181.20254 L 456.78707,181.20254 L 464.56832,183.32754 L 473.75582,186.17129 L 483.66207,188.26504 L 490.03707,193.23379 L 493.56832,199.57754 L 495.69332,205.95254 L 497.09957,214.45254 L 499.22457,222.23379 L 503.47457,228.57754 L 508.41207,232.10879 L 514.78707,233.54629 L 518.31832,233.54629 L 522.53707,233.54629 L 526.78707,233.54629 L 530.09957,236.20254 L 531.03707,235.64004 L 534.56832,232.82754 L 538.81832,232.10879 L 543.75582,231.42129 C 543.75582,231.42129 543.95052,231.94902 545.09957,232.92129 C 545.67409,233.40743 546.47072,234.00648 547.63082,234.70254 C 548.79092,235.3986 550.31128,236.19366 552.25582,237.07754 C 553.87627,237.81411 554.53865,238.16794 555.06832,238.48379 L 559.31832,235.64004 L 562.16207,234.23379 L 564.25582,232.82754 L 566.38082,229.29629 L 572.75582,227.17129 L 576.28707,229.29629 L 581.25582,228.57754 L 583.34957,223.64004 L 587.59957,222.23379 L 589.00582,223.64004 L 594.66207,222.23379 L 598.91207,220.10879 L 603.16207,220.10879 L 606.69332,217.26504 L 611.66207,210.89004 L 613.75582,210.89004 L 616.59957,210.20254 L 621.53707,209.48379 L 625.78707,210.20254 L 627.91207,211.60879 L 632.16207,209.48379 L 634.97457,208.07754 L 638.50582,208.07754 L 640.63082,207.35879 L 649.13082,203.14004 L 650.13082,202.39004 L 648.41207,201.70254 L 646.28707,198.17129 L 647.72457,194.64004 L 642.06832,190.39004 L 634.97457,188.98379 L 630.03707,188.98379 L 625.06832,185.45254 L 622.25582,181.20254 L 627.91207,169.89004 L 625.78707,162.82754 L 625.78707,159.98379 L 624.38082,157.85879 L 620.13082,159.98379 L 612.34957,162.82754 L 606.00582,162.82754 L 603.16207,159.98379 L 601.03707,157.17129 L 597.50582,159.29629 L 593.97457,159.29629 L 589.00582,157.85879 L 583.34957,159.98379 L 579.13082,157.85879 L 577.69332,153.64004 L 573.47457,150.79629 L 573.47457,144.45254 L 570.63082,140.89004 L 569.22457,135.95254 L 567.81832,130.29629 L 564.25582,128.89004 L 554.38082,126.04629 L 550.13082,125.35879 L 550.13082,121.79629 L 548.00582,119.70254 L 543.06832,116.85879 L 537.41207,118.26504 L 531.03707,119.70254 L 524.66207,117.57754 L 520.44332,114.04629 L 517.59957,111.92129 L 518.31832,108.39004 L 516.19332,106.26504 L 513.34957,100.60879 L 509.13082,95.640039 L 506.28707,93.515039 L 502.03707,90.702539 L 497.09957,87.858789 L 496.38082,86.452539 L 497.09957,81.515039 L 497.09957,77.265039 L 496.38082,75.140039 L 494.25582,71.608794 L 494.25582,65.233794 L 492.13082,63.827544 L 491.44332,62.421294 L 489.31832,60.296294 L 485.06832,59.577544 L 476.59957,58.890044 L 471.63082,58.171294 L 470.94332,55.327544 L 473.06832,51.796294 L 473.06832,47.577544 L 470.94332,38.358794 L 468.09957,32.015044 L 463.16207,31.296294 L 457.50582,32.702544 L 452.53707,37.671294 L 445.47457,46.858794 L 440.53707,49.671294 L 429.91207,46.140044 L 422.13082,45.452544 L 415.78707,43.327544 L 415.06832,39.077544 L 413.66207,36.265044 L 407.28707,33.421294 L 403.03707,34.827544 L 397.38082,34.827544 L 391.03707,32.015044 L 387.50582,30.577544 L 381.13082,25.640044 L 374.06832,23.515044 L 367.69332,22.827544 L 360.63082,22.108794 L 355.66207,19.983794 L 353.00582,19.983794 z " class="dept-path" />
+    <path id="path2251" d="M 339.56832,193.82754 L 338.00582,198.17129 L 333.03707,202.42129 L 332.34957,205.95254 L 332.34957,210.20254 L 332.34957,213.01504 L 330.22457,218.67129 L 332.34957,220.10879 L 333.75582,226.45254 L 333.75582,229.98379 L 326.69332,234.23379 L 321.03707,237.76504 L 314.66207,239.20254 L 311.84957,242.01504 L 307.59957,248.39004 L 306.16207,254.04629 L 306.88082,256.17129 L 308.28707,258.98379 L 309.72457,263.23379 L 309.72457,265.35879 L 306.88082,271.01504 L 308.28707,273.14004 L 309.72457,275.95254 L 308.28707,276.67129 L 307.59957,279.48379 L 309.00582,280.92129 L 309.72457,282.32754 L 307.59957,286.57754 L 308.28707,288.67129 L 308.28707,290.79629 L 303.34957,292.23379 L 300.50582,295.04629 L 300.50582,299.29629 L 301.94332,300.70254 L 301.94332,304.23379 L 299.09957,307.07754 L 301.94332,308.48379 L 304.06832,309.20254 L 307.59957,309.89004 L 309.72457,311.32754 L 310.41207,314.85879 L 308.28707,316.98379 L 306.16207,319.79629 L 304.75582,321.20254 L 298.41207,321.20254 L 292.03707,325.45254 L 291.31832,329.70254 L 291.31832,333.23379 L 287.78707,333.95254 L 286.38082,334.64004 L 281.44332,342.42129 L 277.19332,344.54629 L 274.34957,347.39004 L 272.22457,350.20254 L 274.34957,353.73379 L 275.78707,355.14004 L 273.66207,358.70254 L 272.94332,363.64004 L 270.09957,367.17129 L 265.16207,372.14004 L 260.91207,376.35879 L 260.91207,380.60879 L 259.50582,386.26504 L 258.78707,391.92129 L 254.56832,395.45254 L 248.19332,401.82754 L 243.25582,407.48379 L 238.28707,413.14004 L 236.88082,415.95254 L 234.88082,422.35879 L 245.38082,425.17129 L 253.84957,425.17129 L 260.22457,427.26504 L 268.69332,430.10879 L 277.88082,430.82754 L 296.28707,430.10879 L 309.72457,430.82754 L 318.91207,430.82754 L 330.91207,430.82754 L 339.41207,431.51504 L 350.72457,435.76504 L 357.78707,437.17129 L 362.03707,437.89004 L 366.97457,435.76504 L 369.81832,435.76504 L 374.75582,435.76504 L 381.13082,438.60879 L 393.84957,445.67129 L 422.13082,459.79629 L 437.13082,465.79629 L 437.69332,464.76504 L 438.41207,459.79629 L 438.41207,454.14004 L 436.28707,452.01504 L 434.88082,448.48379 L 437.00582,445.67129 L 441.94332,445.67129 L 441.94332,444.26504 L 440.53707,442.82754 L 438.41207,440.01504 L 437.00582,436.48379 L 437.00582,431.79629 L 434.88082,432.92129 L 431.34957,433.64004 L 424.97457,432.23379 L 422.84957,430.10879 L 419.31832,432.23379 L 417.19332,435.76504 L 414.34957,439.29629 L 413.66207,435.04629 L 412.25582,430.10879 L 411.53707,427.98379 L 409.41207,425.17129 L 408.69332,423.73379 L 406.59957,421.60879 L 405.16207,419.51504 L 403.03707,415.95254 L 403.03707,411.73379 L 403.03707,408.20254 L 406.59957,403.23379 L 406.59957,398.29629 L 406.59957,394.76504 L 404.47457,392.64004 L 403.75582,388.39004 L 403.75582,384.85879 L 403.75582,381.32754 L 404.47457,378.48379 L 408.00582,375.67129 L 407.28707,372.14004 L 405.88082,372.14004 L 402.34957,370.70254 L 400.22457,367.17129 L 400.22457,364.35879 L 400.22457,361.51504 L 405.16207,359.39004 L 405.16207,356.57754 L 405.16207,353.73379 L 403.75582,349.48379 L 402.34957,348.07754 L 399.50582,348.07754 L 395.97457,346.67129 L 391.03707,342.42129 L 388.91207,340.29629 L 386.06832,338.89004 L 385.38082,335.35879 L 387.50582,331.82754 L 386.06832,328.98379 L 383.25582,325.45254 L 381.84957,322.64004 L 386.06832,319.79629 L 390.31832,312.01504 L 391.03707,299.29629 L 389.63082,295.04629 L 391.72457,286.57754 L 395.97457,280.20254 L 400.22457,275.26504 L 400.22457,266.04629 L 403.03707,252.64004 L 403.03707,247.67129 L 407.28707,242.73379 L 410.81832,239.20254 L 407.28707,235.64004 L 399.50582,232.82754 L 391.72457,231.42129 L 390.31832,229.29629 L 391.72457,226.45254 L 393.16207,223.64004 L 391.03707,221.51504 L 391.03707,220.10879 L 389.63082,215.14004 L 388.91207,210.20254 L 385.38082,205.23379 L 382.53707,200.29629 L 382.53707,195.35879 L 386.06832,192.51504 L 386.78707,188.98379 L 389.81832,187.26504 L 388.19332,186.17129 L 386.06832,184.73379 L 383.97457,184.73379 L 378.28707,185.45254 L 376.19332,184.73379 L 374.06832,180.51504 L 368.41207,178.39004 L 361.31832,180.51504 L 357.78707,181.20254 L 351.44332,183.32754 L 346.47457,185.45254 L 345.06832,190.39004 L 345.06832,193.92129 L 344.34957,193.92129 L 340.13082,193.92129 L 339.56832,193.82754 z " class="dept-path" />
+    <path id="path2246" d="M 389.81832,187.26504 L 386.78707,188.98379 L 386.06832,192.51504 L 382.53707,195.35879 L 382.53707,200.29629 L 385.38082,205.23379 L 388.91207,210.20254 L 389.63082,215.14004 L 391.03707,220.10879 L 391.03707,221.51504 L 393.16207,223.64004 L 391.72457,226.45254 L 390.31832,229.29629 L 391.72457,231.42129 L 399.50582,232.82754 L 407.28707,235.64004 L 410.81832,239.20254 L 407.28707,242.73379 L 403.03707,247.67129 L 403.03707,252.64004 L 400.22457,266.04629 L 400.22457,275.26504 L 395.97457,280.20254 L 391.72457,286.57754 L 389.63082,295.04629 L 391.03707,299.29629 L 390.31832,312.01504 L 386.06832,319.79629 L 381.84957,322.64004 L 383.25582,325.45254 L 386.06832,328.98379 L 387.50582,331.82754 L 385.38082,335.35879 L 386.06832,338.89004 L 388.91207,340.29629 L 391.03707,342.42129 L 395.97457,346.67129 L 399.50582,348.07754 L 402.34957,348.07754 L 403.75582,349.48379 L 405.16207,353.73379 L 405.16207,356.57754 L 405.16207,359.39004 L 400.22457,361.51504 L 400.22457,364.35879 L 400.22457,367.17129 L 402.34957,370.70254 L 405.88082,372.14004 L 407.28707,372.14004 L 408.00582,375.67129 L 404.47457,378.48379 L 403.75582,381.32754 L 403.75582,384.85879 L 403.75582,388.39004 L 404.47457,392.64004 L 406.59957,394.76504 L 406.59957,398.29629 L 406.59957,403.23379 L 403.03707,408.20254 L 403.03707,411.73379 L 403.03707,415.95254 L 405.16207,419.51504 L 406.59957,421.60879 L 408.69332,423.73379 L 409.41207,425.17129 L 411.53707,427.98379 L 412.25582,430.10879 L 413.66207,435.04629 L 414.34957,439.29629 L 417.19332,435.76504 L 419.31832,432.23379 L 422.84957,430.10879 L 424.97457,432.23379 L 431.34957,433.64004 L 434.88082,432.92129 L 437.00582,431.79629 L 437.00582,431.51504 L 435.56832,427.98379 L 439.81832,423.73379 L 441.22457,420.92129 L 441.22457,415.95254 L 443.34957,413.85879 L 445.47457,412.42129 L 446.19332,410.29629 L 444.06832,408.20254 L 444.75582,403.23379 L 443.34957,398.98379 L 441.94332,396.85879 L 439.81832,395.45254 L 439.81832,392.64004 L 438.41207,389.79629 L 437.00582,388.39004 L 435.56832,384.14004 L 437.00582,382.01504 L 443.34957,382.01504 L 453.25582,381.32754 L 456.78707,382.01504 L 462.44332,379.20254 L 466.69332,372.82754 L 467.41207,370.01504 L 467.41207,366.48379 L 465.28707,364.35879 L 466.69332,360.10879 L 466.69332,356.57754 L 464.56832,353.73379 L 463.84957,347.39004 L 467.41207,343.82754 L 470.94332,341.01504 L 478.72457,339.60879 L 487.19332,340.29629 L 494.25582,340.29629 L 482.94332,318.39004 L 475.88082,299.29629 L 471.63082,298.57754 L 470.22457,300.70254 L 467.41207,300.01504 L 463.84957,295.76504 L 460.31832,292.23379 L 457.50582,286.57754 L 457.50582,281.60879 L 452.53707,278.07754 L 447.59957,278.07754 L 445.47457,280.20254 L 442.66207,278.07754 L 441.22457,274.54629 L 439.09957,269.60879 L 441.22457,266.76504 L 444.06832,266.76504 L 446.19332,266.04629 L 452.53707,260.39004 L 455.38082,257.57754 L 452.53707,255.45254 L 450.41207,251.92129 L 446.88082,249.07754 L 441.94332,244.14004 L 436.28707,235.64004 L 433.44332,228.57754 L 434.16207,221.51504 L 436.28707,215.85879 L 438.41207,208.07754 L 438.41207,202.42129 L 438.41207,198.17129 L 438.41207,193.92129 L 443.34957,189.70254 L 446.88082,183.32754 L 446.88082,181.20254 L 443.34957,181.20254 L 437.69332,184.73379 L 433.44332,188.26504 L 428.50582,188.26504 L 424.97457,185.45254 L 422.13082,185.45254 L 416.47457,187.57754 L 412.25582,189.70254 L 407.28707,187.57754 L 405.16207,185.45254 L 402.34957,184.73379 L 394.56832,186.17129 L 390.31832,187.57754 L 389.81832,187.26504 z " class="dept-path" />
+    <path id="path2231" d="M 446.88082,181.20254 L 446.88082,183.32754 L 443.34957,189.70254 L 438.41207,193.92129 L 438.41207,198.17129 L 438.41207,202.42129 L 438.41207,208.07754 L 436.28707,215.85879 L 434.16207,221.51504 L 433.44332,228.57754 L 436.28707,235.64004 L 441.94332,244.14004 L 446.88082,249.07754 L 450.41207,251.92129 L 452.53707,255.45254 L 455.38082,257.57754 L 452.53707,260.39004 L 446.19332,266.04629 L 444.06832,266.76504 L 441.22457,266.76504 L 439.09957,269.60879 L 441.22457,274.54629 L 442.66207,278.07754 L 445.47457,280.20254 L 447.59957,278.07754 L 452.53707,278.07754 L 457.50582,281.60879 L 457.50582,286.57754 L 460.31832,292.23379 L 463.84957,295.76504 L 467.41207,300.01504 L 470.22457,300.70254 L 471.63082,298.57754 L 475.88082,299.29629 L 482.94332,318.39004 L 494.25582,340.29629 L 502.75582,357.26504 L 509.13082,358.70254 L 512.66207,357.26504 L 516.19332,360.79629 L 517.59957,364.35879 L 522.53707,365.76504 L 529.63082,367.89004 L 533.88082,367.89004 L 535.28707,362.92129 L 535.28707,360.10879 L 540.94332,355.85879 L 548.72457,355.85879 L 553.66207,355.14004 L 556.50582,350.92129 L 557.91207,348.79629 L 562.84957,348.79629 L 564.97457,347.39004 L 562.84957,341.73379 L 561.44332,338.89004 L 562.84957,333.95254 L 567.09957,327.57754 L 567.09957,321.20254 L 568.50582,315.54629 L 568.50582,312.54629 L 566.38082,312.01504 L 560.03707,304.23379 L 555.78707,303.54629 L 547.28707,301.42129 L 542.34957,300.01504 L 538.81832,296.45254 L 542.34957,293.64004 L 545.19332,290.10879 L 540.94332,287.26504 L 536.69332,287.26504 L 534.56832,284.45254 L 535.28707,283.01504 L 533.16207,280.20254 L 531.03707,279.48379 L 526.78707,277.35879 L 521.13082,277.35879 L 519.00582,274.54629 L 514.06832,271.01504 L 511.94332,267.48379 L 512.66207,263.23379 L 514.06832,259.70254 L 511.22457,254.73379 L 512.66207,250.51504 L 518.31832,246.26504 L 523.97457,241.29629 L 527.50582,237.76504 L 530.09957,236.20254 L 526.78707,233.54629 L 522.53707,233.54629 L 518.31832,233.54629 L 514.78707,233.54629 L 508.41207,232.10879 L 503.47457,228.57754 L 499.22457,222.23379 L 497.09957,214.45254 L 495.69332,205.95254 L 493.56832,199.57754 L 490.03707,193.23379 L 483.66207,188.26504 L 473.75582,186.17129 L 464.56832,183.32754 L 456.78707,181.20254 L 449.00582,181.20254 L 446.88082,181.20254 z " class="dept-path" />
+    <path id="path2241" d="M 494.25582,340.29629 L 487.19332,340.29629 L 478.72457,339.60879 L 470.94332,341.01504 L 467.41207,343.82754 L 463.84957,347.39004 L 464.56832,353.73379 L 466.69332,356.57754 L 466.69332,360.10879 L 465.28707,364.35879 L 467.41207,366.48379 L 467.41207,370.01504 L 466.69332,372.82754 L 462.44332,379.20254 L 456.78707,382.01504 L 453.25582,381.32754 L 443.34957,382.01504 L 437.00582,382.01504 L 435.56832,384.14004 L 437.00582,388.39004 L 438.41207,389.79629 L 439.81832,392.64004 L 439.81832,395.45254 L 441.94332,396.85879 L 443.34957,398.98379 L 444.75582,403.23379 L 444.06832,408.20254 L 446.19332,410.29629 L 445.47457,412.42129 L 443.34957,413.85879 L 441.22457,415.95254 L 441.22457,420.92129 L 439.81832,423.73379 L 435.56832,427.98379 L 437.00582,431.51504 L 437.00582,436.48379 L 438.41207,440.01504 L 440.53707,442.82754 L 441.94332,444.26504 L 441.94332,445.67129 L 437.00582,445.67129 L 434.88082,448.48379 L 436.28707,452.01504 L 438.41207,454.14004 L 438.41207,459.79629 L 437.69332,464.76504 L 437.13082,465.79629 L 439.81832,466.89004 L 450.41207,472.54629 L 457.50582,476.76504 L 463.84957,479.60879 L 473.06832,487.39004 L 485.78707,492.32754 L 497.09957,497.29629 L 512.66207,504.35879 L 526.78707,512.82754 L 535.97457,516.39004 L 549.41207,522.04629 L 555.06832,522.04629 L 557.91207,523.45254 L 559.31832,527.70254 L 562.16207,529.10879 L 569.94332,531.23379 L 574.88082,534.76504 L 575.03707,534.92129 L 577.69332,526.98379 L 583.34957,519.20254 L 589.00582,513.54629 L 593.25582,511.42129 L 596.09957,509.29629 L 593.25582,505.04629 L 591.13082,501.51504 L 591.13082,497.29629 L 594.66207,495.17129 L 598.91207,494.45254 L 598.91207,490.92129 L 601.75582,480.32754 L 599.63082,473.23379 L 598.22457,468.98379 L 593.97457,465.45254 L 591.84957,461.92129 L 590.44332,460.51504 L 587.59957,456.26504 L 584.06832,451.32754 L 582.66207,442.82754 L 583.34957,433.64004 L 586.91207,427.26504 L 590.44332,420.20254 L 588.31832,417.39004 L 585.47457,413.14004 L 582.66207,405.35879 L 582.66207,403.95254 L 579.13082,397.57754 L 575.59957,394.76504 L 575.59957,391.20254 L 572.75582,390.51504 L 563.56832,386.98379 L 558.59957,386.98379 L 555.06832,383.45254 L 552.94332,373.54629 L 552.94332,365.04629 L 551.53707,361.51504 L 550.13082,360.10879 L 550.13082,355.64004 L 548.72457,355.85879 L 540.94332,355.85879 L 535.28707,360.10879 L 535.28707,362.92129 L 533.88082,367.89004 L 529.63082,367.89004 L 522.53707,365.76504 L 517.59957,364.35879 L 516.19332,360.79629 L 512.66207,357.26504 L 509.13082,358.70254 L 502.75582,357.26504 L 494.25582,340.29629 z " class="dept-path" />
+    <path id="path2219" d="M 650.13082,202.39004 L 649.13082,203.14004 L 640.63082,207.35879 L 638.50582,208.07754 L 634.97457,208.07754 L 632.16207,209.48379 L 627.91207,211.60879 L 625.78707,210.20254 L 621.53707,209.48379 L 616.59957,210.20254 L 613.75582,210.89004 L 611.66207,210.89004 L 606.69332,217.26504 L 603.16207,220.10879 L 598.91207,220.10879 L 594.66207,222.23379 L 589.00582,223.64004 L 587.59957,222.23379 L 583.34957,223.64004 L 581.25582,228.57754 L 576.28707,229.29629 L 572.75582,227.17129 L 566.38082,229.29629 L 564.25582,232.82754 L 562.16207,234.23379 L 559.31832,235.64004 L 555.06832,238.48379 C 555.17425,238.54696 555.559,238.71532 555.63082,238.76504 C 555.84627,238.9142 555.91535,239.0292 555.88082,239.07754 C 555.84629,239.12588 555.70469,239.13089 555.50582,239.10879 C 554.71033,239.0204 552.94331,238.48379 552.94332,238.48379 L 555.06832,238.48379 C 554.53865,238.16794 553.87627,237.81411 552.25582,237.07754 C 550.31128,236.19366 548.79092,235.3986 547.63082,234.70254 C 546.47072,234.00648 545.67409,233.40743 545.09957,232.92129 C 543.95052,231.94902 543.75582,231.42129 543.75582,231.42129 L 538.81832,232.10879 L 534.56832,232.82754 L 531.03707,235.64004 L 527.50582,237.76504 L 523.97457,241.29629 L 518.31832,246.26504 L 512.66207,250.51504 L 511.22457,254.73379 L 514.06832,259.70254 L 512.66207,263.23379 L 511.94332,267.48379 L 514.06832,271.01504 L 519.00582,274.54629 L 521.13082,277.35879 L 526.78707,277.35879 L 531.03707,279.48379 L 533.16207,280.20254 L 535.28707,283.01504 L 534.56832,284.45254 L 536.69332,287.26504 L 540.94332,287.26504 L 545.19332,290.10879 L 542.34957,293.64004 L 538.81832,296.45254 L 542.34957,300.01504 L 547.28707,301.42129 L 555.78707,303.54629 L 560.03707,304.23379 L 566.38082,312.01504 L 572.03707,313.42129 L 577.00582,313.42129 L 581.25582,311.32754 L 584.78707,310.60879 L 585.47457,308.48379 L 591.13082,307.76504 L 596.09957,307.76504 L 602.44332,304.23379 L 606.69332,302.82754 L 608.09957,301.42129 L 611.66207,301.42129 L 615.88082,297.89004 L 617.31832,297.89004 L 621.53707,299.29629 L 625.78707,300.01504 L 630.72457,302.10879 L 634.97457,302.82754 L 642.06832,301.42129 L 646.28707,302.82754 L 651.94332,300.01504 L 656.91207,301.42129 L 661.13082,304.95254 L 667.50582,309.20254 L 674.56832,312.01504 L 679.53707,313.42129 L 682.34957,314.14004 L 680.94332,317.67129 L 685.19332,321.92129 L 691.53707,321.92129 L 696.50582,322.64004 L 709.94332,324.04629 L 710.63082,324.04629 L 710.63082,320.51504 L 709.94332,314.14004 L 711.34957,310.60879 L 716.28707,307.07754 L 718.41207,303.54629 L 717.00582,298.57754 L 717.00582,295.04629 L 721.94332,291.51504 L 724.06832,289.39004 L 724.06832,285.85879 L 724.06832,282.32754 L 725.50582,280.20254 L 725.50582,278.07754 L 726.19332,274.54629 L 728.31832,271.70254 L 729.94332,270.48379 L 729.03707,269.60879 L 729.03707,264.64004 L 726.91207,258.98379 L 722.66207,253.32754 L 719.13082,249.07754 L 722.66207,239.20254 L 722.66207,235.64004 L 727.59957,232.82754 L 727.59957,229.98379 L 726.19332,227.89004 L 720.53707,222.92129 L 714.19332,216.57754 L 707.81832,217.26504 L 702.84957,217.98379 L 700.03707,217.26504 L 695.09957,219.39004 L 693.66207,215.85879 L 690.13082,211.60879 L 687.31832,208.79629 L 685.88082,208.07754 L 683.06832,207.35879 L 679.53707,207.35879 L 674.56832,204.54629 L 671.03707,201.70254 L 664.69332,201.70254 L 659.03707,200.29629 L 656.19332,198.89004 L 654.06832,201.01504 L 651.94332,203.14004 L 650.13082,202.39004 z " class="dept-path" />
+    <path id="path2236" d="M 550.13082,355.64004 L 550.13082,360.10879 L 551.53707,361.51504 L 552.94332,365.04629 L 552.94332,373.54629 L 555.06832,383.45254 L 558.59957,386.98379 L 563.56832,386.98379 L 572.75582,390.51504 L 575.59957,391.20254 L 575.59957,394.76504 L 579.13082,397.57754 L 582.66207,403.95254 L 582.66207,405.35879 L 585.47457,413.14004 L 588.31832,417.39004 L 590.44332,420.20254 L 586.91207,427.26504 L 583.34957,433.64004 L 582.66207,442.82754 L 584.06832,451.32754 L 587.59957,456.26504 L 590.44332,460.51504 L 591.84957,461.92129 L 593.97457,465.45254 L 598.22457,468.98379 L 599.63082,473.23379 L 601.75582,480.32754 L 598.91207,490.92129 L 598.91207,494.45254 L 594.66207,495.17129 L 591.13082,497.29629 L 591.13082,501.51504 L 593.25582,505.04629 L 596.09957,509.29629 L 593.25582,511.42129 L 589.00582,513.54629 L 583.34957,519.20254 L 577.69332,526.98379 L 575.03707,534.92129 L 580.53707,540.42129 L 591.13082,543.95254 L 591.44332,544.01504 L 591.13082,542.54629 L 589.00582,535.45254 L 590.44332,531.23379 L 594.66207,529.10879 L 598.91207,525.57754 L 601.75582,524.14004 L 605.28707,523.45254 L 609.53707,520.60879 L 612.34957,514.95254 L 616.59957,510.01504 L 620.84957,505.76504 L 625.06832,502.95254 L 623.66207,499.39004 L 620.84957,495.17129 L 620.84957,490.20254 L 625.78707,477.48379 L 630.72457,468.98379 L 637.81832,462.64004 L 639.22457,458.39004 L 639.94332,451.32754 L 644.16207,448.48379 L 644.88082,440.70254 L 646.28707,434.35879 L 648.41207,425.17129 L 648.41207,418.79629 L 650.53707,411.01504 L 656.91207,407.48379 L 660.44332,407.48379 L 662.56832,403.23379 L 662.56832,400.42129 L 664.69332,396.85879 L 668.22457,391.92129 L 673.16207,391.92129 L 678.13082,392.64004 L 687.31832,389.79629 L 692.25582,384.85879 L 692.97457,380.60879 L 697.91207,377.79629 L 700.03707,370.70254 L 704.97457,363.64004 L 712.75582,359.39004 L 720.53707,354.45254 L 724.78707,352.32754 L 727.59957,348.79629 L 724.78707,346.67129 L 723.38082,343.82754 L 722.97457,342.85879 L 720.53707,341.01504 L 721.94332,336.07754 L 721.25582,333.95254 L 717.72457,333.95254 L 715.59957,336.76504 L 713.47457,335.35879 L 710.63082,332.51504 L 708.50582,328.98379 L 710.63082,324.73379 L 710.63082,324.04629 L 709.94332,324.04629 L 696.50582,322.64004 L 691.53707,321.92129 L 685.19332,321.92129 L 680.94332,317.67129 L 682.34957,314.14004 L 679.53707,313.42129 L 674.56832,312.01504 L 667.50582,309.20254 L 661.13082,304.95254 L 656.91207,301.42129 L 651.94332,300.01504 L 646.28707,302.82754 L 642.06832,301.42129 L 634.97457,302.82754 L 630.72457,302.10879 L 625.78707,300.01504 L 621.53707,299.29629 L 617.31832,297.89004 L 615.88082,297.89004 L 611.66207,301.42129 L 608.09957,301.42129 L 606.69332,302.82754 L 602.44332,304.23379 L 596.09957,307.76504 L 591.13082,307.76504 L 585.47457,308.48379 L 584.78707,310.60879 L 581.25582,311.32754 L 577.00582,313.42129 L 572.03707,313.42129 L 568.50582,312.54629 L 568.50582,315.54629 L 567.09957,321.20254 L 567.09957,327.57754 L 562.84957,333.95254 L 561.44332,338.89004 L 562.84957,341.73379 L 564.97457,347.39004 L 562.84957,348.79629 L 557.91207,348.79629 L 556.50582,350.92129 L 553.66207,355.14004 L 550.13082,355.64004 z " class="dept-path" />
+  </g>
+
+  <!-- 🔵 ZONA ORIENTAL -->
+  <g class="map-zone zone-oriental" id="zoneOrientalGroup">
+    <path id="path2214" d="M 722.97457,342.85879 L 723.38082,343.82754 L 724.78707,346.67129 L 727.59957,348.79629 L 724.78707,352.32754 L 720.53707,354.45254 L 712.75582,359.39004 L 704.97457,363.64004 L 700.03707,370.70254 L 697.91207,377.79629 L 692.97457,380.60879 L 692.25582,384.85879 L 687.31832,389.79629 L 678.13082,392.64004 L 673.16207,391.92129 L 668.22457,391.92129 L 664.69332,396.85879 L 662.56832,400.42129 L 662.56832,403.23379 L 660.44332,407.48379 L 656.91207,407.48379 L 650.53707,411.01504 L 648.41207,418.79629 L 648.41207,425.17129 L 646.28707,434.35879 L 644.88082,440.70254 L 644.16207,448.48379 L 639.94332,451.32754 L 639.22457,458.39004 L 637.81832,462.64004 L 630.72457,468.98379 L 625.78707,477.48379 L 620.84957,490.20254 L 620.84957,495.17129 L 623.66207,499.39004 L 625.06832,502.95254 L 620.84957,505.76504 L 616.59957,510.01504 L 612.34957,514.95254 L 609.53707,520.60879 L 605.28707,523.45254 L 601.75582,524.14004 L 598.91207,525.57754 L 594.66207,529.10879 L 590.44332,531.23379 L 589.00582,535.45254 L 591.13082,542.54629 L 591.44332,544.01504 L 601.75582,546.07754 L 613.06832,550.32754 L 633.56832,553.85879 L 650.53707,557.39004 L 663.25582,558.79629 L 674.56832,559.51504 L 683.78707,562.32754 L 694.38082,566.57754 L 712.06832,570.10879 L 725.50582,575.07754 L 729.72457,577.17129 L 731.84957,574.35879 L 729.72457,572.23379 L 727.59957,570.10879 L 726.91207,567.98379 L 723.38082,565.85879 L 705.69332,561.64004 L 697.91207,558.79629 L 695.78707,557.39004 L 698.63082,555.98379 L 699.31832,553.14004 L 696.50582,549.60879 L 683.78707,538.29629 L 678.13082,538.29629 L 669.63082,539.70254 L 663.97457,542.54629 L 660.44332,545.35879 L 658.31832,546.07754 L 655.47457,545.35879 L 651.25582,543.23379 L 639.22457,542.54629 L 632.84957,541.10879 L 628.63082,537.57754 L 628.63082,535.45254 L 632.16207,534.04629 L 639.22457,534.76504 L 643.47457,533.35879 L 647.72457,534.04629 L 656.19332,537.57754 L 661.13082,535.45254 L 664.69332,533.35879 L 664.69332,529.79629 L 663.25582,528.39004 L 662.56832,526.26504 L 666.09957,525.57754 L 674.56832,529.10879 L 690.13082,530.51504 L 701.44332,534.76504 L 706.41207,540.42129 L 709.22457,544.67129 L 708.50582,549.60879 L 709.94332,553.85879 C 709.94332,553.8588 712.77114,556.67129 715.59957,556.67129 C 718.42799,556.6713 730.44332,559.51504 730.44332,559.51504 L 736.09957,559.51504 L 736.81832,557.39004 L 732.56832,553.85879 L 726.19332,548.20254 L 724.06832,543.95254 L 724.78707,539.70254 L 727.59957,537.57754 L 733.25582,538.29629 L 740.34957,546.07754 L 748.81832,555.26504 L 753.06832,562.32754 L 751.66207,564.45254 L 750.25582,564.45254 L 748.81832,569.42129 L 748.81832,576.48379 L 755.91207,579.29629 L 764.38082,579.29629 L 770.75582,578.60879 L 772.88082,576.48379 L 770.03707,574.35879 L 768.63082,572.95254 L 770.03707,571.51504 L 779.22457,569.42129 L 781.34957,567.29629 L 779.94332,565.17129 L 777.09957,563.76504 L 777.09957,562.32754 L 781.34957,560.20254 L 788.41207,560.20254 L 794.78707,563.76504 L 795.50582,567.98379 L 791.97457,570.82754 L 787.00582,574.35879 L 790.53707,577.89004 L 803.97457,579.29629 L 830.13082,581.42129 L 842.88082,583.54629 L 849.94332,583.54629 L 855.59957,581.42129 L 862.66207,580.01504 L 879.63082,580.73379 L 886.72457,581.42129 L 887.19332,581.20254 L 883.16207,574.35879 L 876.81832,565.17129 L 867.63082,556.67129 L 861.97457,552.45254 L 853.47457,549.60879 L 846.41207,549.60879 L 843.56832,547.48379 L 845.00582,543.23379 L 846.41207,537.57754 L 847.81832,531.92129 L 845.69332,529.10879 L 843.56832,526.26504 L 839.34957,522.73379 L 841.44332,519.20254 L 837.91207,517.79629 L 835.09957,519.20254 L 829.44332,518.48379 L 827.31832,517.07754 L 823.78707,516.39004 L 817.41207,519.92129 L 816.00582,522.73379 L 813.88082,531.23379 L 814.59957,534.76504 L 816.69332,537.57754 L 817.41207,540.42129 L 812.47457,541.10879 L 806.81832,541.10879 L 802.56832,541.82754 L 802.56832,537.57754 L 799.72457,531.92129 L 801.16207,527.70254 L 812.47457,516.39004 L 813.88082,512.14004 L 811.75582,509.29629 L 813.88082,505.76504 L 811.75582,502.95254 L 808.22457,501.51504 L 803.97457,504.35879 L 801.16207,502.95254 L 796.91207,504.35879 L 792.66207,504.35879 L 788.41207,504.35879 L 789.13082,499.39004 L 788.41207,495.85879 L 784.19332,494.45254 L 777.09957,490.20254 L 773.56832,487.39004 L 774.97457,481.01504 L 775.69332,473.95254 L 775.69332,466.17129 L 775.69332,462.64004 L 774.97457,460.51504 L 772.16207,462.64004 L 768.63082,463.32754 L 768.63082,459.10879 L 770.75582,455.57754 L 772.88082,451.32754 L 774.97457,444.95254 L 774.97457,440.01504 L 777.09957,437.17129 L 780.63082,435.76504 L 780.63082,432.23379 L 777.09957,423.04629 L 777.09957,413.85879 L 775.69332,410.29629 L 772.88082,403.23379 L 772.88082,394.76504 L 774.97457,391.20254 L 779.22457,387.67129 L 780.63082,384.85879 L 780.63082,382.73379 L 777.09957,378.48379 L 775.69332,374.23379 L 778.53707,369.29629 L 778.53707,363.64004 L 776.41207,358.70254 L 774.28707,359.39004 L 770.03707,362.23379 L 765.09957,362.23379 L 758.72457,359.39004 L 753.78707,354.45254 L 750.25582,349.48379 L 747.41207,345.95254 L 741.75582,346.67129 L 736.81832,348.79629 L 731.16207,345.95254 L 726.19332,345.26504 L 722.97457,342.85879 z " class="dept-path" />
+    <path id="path2209" d="M 930.28707,403.32754 L 895.19332,405.35879 L 888.13082,402.54629 L 883.16207,399.70254 L 880.34957,396.17129 L 882.47457,392.64004 L 884.59957,389.10879 L 883.88082,384.85879 L 876.81832,381.32754 L 873.28707,381.32754 L 871.16207,383.45254 L 867.63082,384.85879 L 866.19332,381.32754 L 864.78707,379.89004 L 861.25582,379.89004 L 857.00582,382.73379 L 853.47457,381.32754 L 851.34957,378.48379 L 850.66207,374.23379 L 845.00582,371.42129 L 841.44332,365.04629 L 835.78707,360.10879 L 831.56832,356.57754 L 826.59957,354.45254 L 824.47457,345.95254 L 824.47457,338.89004 L 825.19332,333.95254 L 830.84957,331.82754 L 834.38082,331.82754 L 839.34957,331.82754 L 843.56832,329.70254 L 844.28707,324.73379 L 844.28707,317.67129 L 842.16207,315.54629 L 838.63082,312.73379 L 833.69332,311.32754 L 830.13082,307.07754 L 828.72457,302.10879 L 827.31832,298.57754 L 825.91207,293.64004 L 823.06832,287.98379 L 837.91207,279.48379 L 828.06832,243.95254 L 827.31832,247.67129 L 824.47457,250.51504 L 818.13082,248.39004 L 814.59957,249.79629 L 813.16207,251.20254 L 808.22457,253.32754 L 806.09957,256.85879 L 806.09957,261.10879 L 801.84957,261.82754 L 799.72457,260.39004 L 797.63082,261.10879 L 794.78707,261.10879 L 793.38082,259.70254 L 789.84957,259.70254 L 789.13082,262.51504 L 789.13082,266.04629 L 784.19332,267.48379 L 782.06832,266.76504 L 779.94332,263.95254 L 777.09957,263.23379 L 772.88082,263.23379 L 769.31832,264.64004 L 764.38082,263.23379 L 761.56832,261.10879 L 755.19332,263.23379 L 753.78707,266.04629 L 752.34957,271.01504 L 750.94332,272.42129 L 748.81832,272.42129 L 746.00582,271.01504 L 743.16207,273.14004 L 741.75582,275.95254 L 737.50582,275.95254 L 736.09957,272.42129 L 733.97457,271.70254 L 731.16207,271.70254 L 729.94332,270.48379 L 728.31832,271.70254 L 726.19332,274.54629 L 725.50582,278.07754 L 725.50582,280.20254 L 724.06832,282.32754 L 724.06832,285.85879 L 724.06832,289.39004 L 721.94332,291.51504 L 717.00582,295.04629 L 717.00582,298.57754 L 718.41207,303.54629 L 716.28707,307.07754 L 711.34957,310.60879 L 709.94332,314.14004 L 710.63082,320.51504 L 710.63082,324.73379 L 708.50582,328.98379 L 710.63082,332.51504 L 713.47457,335.35879 L 715.59957,336.76504 L 717.72457,333.95254 L 721.25582,333.95254 L 721.94332,336.07754 L 720.53707,341.01504 L 726.19332,345.26504 L 731.16207,345.95254 L 736.81832,348.79629 L 741.75582,346.67129 L 747.41207,345.95254 L 750.25582,349.48379 L 753.78707,354.45254 L 758.72457,359.39004 L 765.09957,362.23379 L 770.03707,362.23379 L 774.28707,359.39004 L 776.41207,358.70254 L 778.53707,363.64004 L 778.53707,369.29629 L 775.69332,374.23379 L 777.09957,378.48379 L 780.63082,382.73379 L 780.63082,384.85879 L 779.22457,387.67129 L 774.97457,391.20254 L 772.88082,394.76504 L 772.88082,403.23379 L 775.69332,410.29629 L 777.09957,413.85879 L 777.09957,423.04629 L 780.63082,432.23379 L 780.63082,435.76504 L 777.09957,437.17129 L 774.97457,440.01504 L 774.97457,444.95254 L 772.88082,451.32754 L 770.75582,455.57754 L 768.63082,459.10879 L 768.63082,463.32754 L 772.16207,462.64004 L 774.97457,460.51504 L 775.69332,462.64004 L 775.69332,466.17129 L 775.69332,473.95254 L 774.97457,481.01504 L 773.56832,487.39004 L 777.09957,490.20254 L 784.19332,494.45254 L 788.41207,495.85879 L 789.13082,499.39004 L 788.41207,504.35879 L 792.66207,504.35879 L 796.91207,504.35879 L 801.16207,502.95254 L 803.97457,504.35879 L 808.22457,501.51504 L 811.75582,502.95254 L 813.88082,505.76504 L 811.75582,509.29629 L 813.88082,512.14004 L 812.47457,516.39004 L 801.16207,527.70254 L 799.72457,531.92129 L 802.56832,537.57754 L 802.56832,541.82754 L 806.81832,541.10879 L 812.47457,541.10879 L 817.41207,540.42129 L 816.69332,537.57754 L 814.59957,534.76504 L 813.88082,531.23379 L 816.00582,522.73379 L 817.41207,519.92129 L 823.78707,516.39004 L 827.31832,517.07754 L 829.44332,518.48379 L 835.09957,519.20254 L 837.91207,517.79629 L 841.44332,519.20254 L 839.34957,522.73379 L 843.56832,526.26504 L 845.69332,529.10879 L 847.81832,531.92129 L 846.41207,537.57754 L 845.00582,543.23379 L 843.56832,547.48379 L 846.41207,549.60879 L 853.47457,549.60879 L 861.97457,552.45254 L 867.63082,556.67129 L 876.81832,565.17129 L 883.16207,574.35879 L 887.19332,581.20254 L 890.94332,579.29629 L 893.06832,577.89004 L 898.84957,577.89004 L 900.84957,571.51504 L 900.84957,565.85879 L 904.38082,561.64004 L 922.78707,543.23379 L 924.88082,526.98379 L 924.88082,520.60879 L 924.88082,516.39004 L 922.78707,512.14004 L 924.19332,510.01504 L 929.84957,503.64004 L 928.44332,498.70254 L 926.31832,496.57754 L 921.34957,492.32754 L 924.88082,491.64004 L 926.31832,488.07754 L 929.13082,483.14004 L 931.97457,478.20254 L 931.25582,471.82754 L 929.13082,466.89004 L 927.00582,461.23379 L 924.19332,452.73379 L 924.19332,449.92129 L 923.47457,445.67129 L 926.31832,439.29629 L 929.84957,432.92129 L 931.97457,419.51504 L 931.97457,413.85879 L 929.84957,411.01504 L 929.13082,407.48379 L 930.28707,403.32754 z " class="dept-path" />
+    <path id="path2193" d="M 828.06832,243.95254 L 837.91207,279.48379 L 823.06832,287.98379 L 825.91207,293.64004 L 827.31832,298.57754 L 828.72457,302.10879 L 830.13082,307.07754 L 833.69332,311.32754 L 838.63082,312.73379 L 842.16207,315.54629 L 844.28707,317.67129 L 844.28707,324.73379 L 843.56832,329.70254 L 839.34957,331.82754 L 834.38082,331.82754 L 830.84957,331.82754 L 825.19332,333.95254 L 824.47457,338.89004 L 824.47457,345.95254 L 826.59957,354.45254 L 831.56832,356.57754 L 835.78707,360.10879 L 841.44332,365.04629 L 845.00582,371.42129 L 850.66207,374.23379 L 851.34957,378.48379 L 853.47457,381.32754 L 857.00582,382.73379 L 861.25582,379.89004 L 864.78707,379.89004 L 866.19332,381.32754 L 867.63082,384.85879 L 871.16207,383.45254 L 873.28707,381.32754 L 876.81832,381.32754 L 883.88082,384.85879 L 884.59957,389.10879 L 882.47457,392.64004 L 880.34957,396.17129 L 883.16207,399.70254 L 888.13082,402.54629 L 895.19332,405.35879 L 931.97457,403.23379 L 937.63082,401.10879 L 940.44332,397.57754 L 943.97457,394.04629 L 949.63082,389.10879 L 953.88082,384.14004 L 953.88082,375.67129 L 957.41207,366.48379 L 963.06832,361.51504 L 964.50582,355.85879 L 962.38082,353.73379 L 963.06832,345.95254 L 964.50582,340.29629 L 966.59957,333.23379 L 963.78707,329.70254 L 961.66207,326.85879 L 957.41207,326.85879 L 954.59957,327.57754 L 951.06832,328.98379 L 952.47457,325.45254 L 971.56832,299.29629 L 972.97457,292.23379 L 969.44332,286.57754 L 968.72457,282.32754 L 970.84957,275.26504 L 972.97457,270.29629 L 968.03707,263.23379 L 965.28707,257.57754 L 956.00582,257.57754 L 953.19332,259.70254 L 948.22457,261.10879 L 943.28707,266.04629 L 939.03707,268.17129 L 935.50582,266.04629 L 936.22457,262.51504 L 936.91207,259.70254 L 934.78707,255.45254 L 929.13082,249.07754 L 923.47457,243.42129 L 918.53707,242.01504 L 915.00582,236.35879 L 915.00582,231.42129 L 912.88082,227.89004 L 910.75582,221.51504 L 911.47457,217.26504 L 907.91207,213.01504 L 900.84957,212.32754 L 895.19332,211.60879 L 887.41207,215.14004 L 881.06832,215.85879 L 874.69332,216.57754 L 872.56832,219.39004 L 870.44332,219.39004 L 868.31832,217.26504 L 862.66207,215.85879 L 855.59957,214.45254 L 850.66207,213.01504 L 846.41207,212.32754 L 841.44332,215.14004 L 841.44332,222.23379 L 843.56832,226.45254 L 845.69332,228.57754 L 850.66207,232.10879 L 850.66207,235.64004 L 844.28707,237.07754 L 836.50582,237.76504 L 831.56832,237.76504 L 828.72457,240.60879 L 828.06832,243.95254 z " class="dept-path" />
+    <path id="path2204" d="M 930.28707,403.32754 L 929.13082,407.48379 L 929.84957,411.01504 L 931.97457,413.85879 L 931.97457,419.51504 L 929.84957,432.92129 L 926.31832,439.29629 L 923.47457,445.67129 L 924.19332,449.92129 L 924.19332,452.73379 L 927.00582,461.23379 L 929.13082,466.89004 L 931.25582,471.82754 L 931.97457,478.20254 L 929.13082,483.14004 L 926.31832,488.07754 L 924.88082,491.64004 L 921.34957,492.32754 L 926.31832,496.57754 L 928.44332,498.70254 L 929.84957,503.64004 L 924.19332,510.01504 L 922.78707,512.14004 L 924.88082,516.39004 L 924.88082,520.60879 L 924.88082,526.98379 L 922.78707,543.23379 L 904.38082,561.64004 L 900.84957,565.85879 L 900.84957,571.51504 L 898.84957,577.89004 L 900.84957,577.89004 L 922.78707,578.60879 L 942.56832,581.42129 L 958.13082,583.54629 L 973.69332,584.95254 L 980.75582,584.26504 L 985.00582,581.42129 L 983.59957,580.01504 L 978.63082,577.17129 L 977.22457,575.07754 L 977.22457,573.64004 L 975.09957,572.23379 L 972.28707,571.51504 L 969.44332,567.98379 L 971.56832,565.85879 L 981.47457,563.76504 L 987.13086,560.92129 L 997.00586,556.67129 L 1001.2559,553.14004 L 1008.3496,551.73379 L 1018.9434,546.07754 L 1025.3184,540.42129 L 1030.9746,530.51504 L 1035.1934,523.45254 L 1031.6621,519.92129 L 1028.8496,518.48379 L 1022.4746,515.67129 L 1021.7559,513.54629 L 1021.7559,512.14004 L 1019.6621,509.29629 L 1006.2246,504.35879 L 1001.9746,500.10879 L 999.13086,498.70254 L 997.72456,494.45254 L 995.59956,485.26504 L 1000.5684,471.10879 L 1004.0996,464.76504 L 1009.0371,463.32754 L 1014.0059,463.32754 L 1012.5684,466.17129 L 1012.5684,469.70254 L 1018.2246,471.10879 L 1023.8809,471.10879 L 1031.6621,473.23379 L 1035.9121,470.42129 L 1036.6309,467.57754 L 1040.8496,465.45254 L 1042.2871,462.64004 L 1047.2246,459.79629 L 1052.1621,459.10879 L 1056.4121,456.98379 L 1060.6621,455.57754 L 1061.3809,450.60879 L 1063.4746,443.54629 L 1061.3809,438.60879 L 1055.0059,433.64004 L 1050.7559,432.23379 L 1049.3496,427.26504 L 1047.9434,427.98379 L 1043.6934,430.10879 L 1039.4434,430.10879 L 1038.0371,427.98379 L 1035.1934,427.26504 L 1030.9746,425.85879 L 1030.9746,423.73379 L 1035.9121,421.60879 L 1035.9121,417.39004 L 1034.5059,412.42129 L 1035.1934,408.89004 L 1035.1934,406.07754 L 1035.1934,401.82754 L 1039.4434,398.29629 L 1040.1621,394.76504 L 1042.9746,391.92129 L 1045.8184,387.67129 L 1047.9434,378.48379 L 1049.3496,357.26504 L 1053.5996,348.07754 L 1057.1309,340.29629 L 1057.8184,331.10879 L 1057.1309,327.57754 L 1059.9434,321.92129 L 1062.7871,318.39004 L 1065.5996,312.73379 L 1069.1309,304.23379 L 1068.4434,300.01504 L 1067.7246,297.17129 L 1066.3184,295.76504 L 1060.6621,291.51504 L 1055.7246,286.57754 L 1050.7559,274.54629 L 1046.5059,268.17129 L 1038.7246,266.04629 L 1035.9121,261.82754 L 1031.6621,258.98379 L 1030.9746,254.04629 L 1029.5371,252.64004 L 1018.2246,251.92129 L 1010.4434,253.32754 L 1006.9121,256.85879 L 997.00586,256.85879 L 990.66206,255.45254 L 985.69332,256.17129 L 982.16207,258.29629 L 977.94332,258.98379 L 975.09957,258.98379 L 971.56832,259.70254 L 966.59957,257.57754 L 965.28707,257.57754 L 968.03707,263.23379 L 972.97457,270.29629 L 970.84957,275.26504 L 968.72457,282.32754 L 969.44332,286.57754 L 972.97457,292.23379 L 971.56832,299.29629 L 952.47457,325.45254 L 951.06832,328.98379 L 954.59957,327.57754 L 957.41207,326.85879 L 961.66207,326.85879 L 963.78707,329.70254 L 966.59957,333.23379 L 964.50582,340.29629 L 963.06832,345.95254 L 962.38082,353.73379 L 964.50582,355.85879 L 963.06832,361.51504 L 957.41207,366.48379 L 953.88082,375.67129 L 953.88082,384.14004 L 949.63082,389.10879 L 943.97457,394.04629 L 940.44332,397.57754 L 937.63082,401.10879 L 931.97457,403.23379 L 930.28707,403.32754 z " class="dept-path" />
+    <path id="path2195" d="M 1041.5683,516.02169 L 1041.5683,520.26433 L 1040.8612,522.7392 L 1042.629,525.56763 L 1046.5181,526.62829 L 1046.8716,524.86052 L 1046.8716,522.7392 L 1050.0536,517.78945 L 1050.7607,515.66813 L 1048.2858,515.31458 L 1045.1039,514.96103 L 1043.3361,515.31458 L 1041.5683,516.02169 z " class="dept-path" />
+    <path id="path2197" d="M 1035.2044,549.96281 L 1036.6186,554.91256 L 1038.3863,557.74099 L 1042.2754,559.50875 L 1045.1039,558.44809 L 1046.1645,554.91256 L 1047.2252,552.08413 L 1045.1039,549.60926 L 1039.447,546.78083 L 1036.6186,547.84149 L 1035.2044,549.96281 z " class="dept-path" />
+    <path id="path2199" d="M 1058.5389,562.33718 L 1058.5389,570.46891 L 1058.5389,574.71155 L 1059.9531,576.12576 L 1060.6602,579.30774 L 1060.6602,581.78262 L 1062.7815,582.13617 L 1064.5493,580.3684 L 1068.0848,581.78262 L 1068.7919,583.55038 L 1072.3275,582.84328 L 1073.7417,580.01485 L 1072.3275,577.89353 L 1071.9739,575.41865 L 1070.5597,569.7618 L 1069.8526,565.16561 L 1067.3777,561.27652 L 1061.7209,559.86231 L 1058.5389,562.33718 z " class="dept-path" />
+  </g>
+
+  <!-- Dynamic Arced Connection Lines linked to zones -->
+  <g class="trade-network-lines">
+    <!-- Occidental Arcs -->
+    <path d="M 210 260 Q 150 285 95 344" class="route-arc route-occidental" />
+    <path d="M 210 260 Q 185 330 193 336" class="route-arc route-occidental" />
+    <path d="M 210 260 Q 320 230 440 310" class="route-arc route-occidental route-central active" />
+
+    <!-- Central Arcs -->
+    <path d="M 440 310 Q 630 180 820 410" class="route-arc route-central route-oriental active" />
+    <path d="M 440 310 Q 710 130 984 418" class="route-arc route-central route-oriental active" />
+    <path d="M 210 260 Q 330 150 484 130" class="route-arc route-central route-occidental active" />
+    <path d="M 440 310 Q 600 480 738 463" class="route-arc route-central active" />
+    <path d="M 440 310 Q 520 220 620 261" class="route-arc route-central active" />
+
+    <!-- Oriental Arcs -->
+    <path d="M 820 410 Q 900 370 984 418" class="route-arc route-oriental" />
+    <path d="M 820 410 Q 870 330 898 308" class="route-arc route-oriental" />
+  </g>
+
+  <!-- Dynamic Ring Nodes & Satellites for all 3 Zones -->
+  <g class="map-nodes">
+    <!-- Satellites -->
+    <circle cx="95" cy="344" r="5" class="satellite-node node-occidental" />
+    <circle cx="193" cy="336" r="5" class="satellite-node node-occidental" />
+    <circle cx="484" cy="130" r="5.5" class="satellite-node node-central active-sat" />
+    <circle cx="620" cy="261" r="5.5" class="satellite-node node-central active-sat" />
+    <circle cx="738" cy="463" r="5" class="satellite-node node-oriental" />
+    <circle cx="898" cy="308" r="5" class="satellite-node node-oriental" />
+
+    <!-- Hub 1: Santa Ana (Occidental) -->
+    <g class="concentric-hub node-occidental" id="hubSantaAna" transform="translate(210, 260)">
+      <circle r="28" class="hub-glow-ring" />
+      <circle r="22" class="hub-pulse" />
+      <circle r="15" class="hub-ring-outer" />
+      <circle r="9" class="hub-ring-inner" />
+      <circle r="5" class="hub-core" />
+    </g>
+
+    <!-- Hub 2: San Salvador (Central - Active by default) -->
+    <g class="concentric-hub node-central active" id="hubSanSalvador" transform="translate(440, 310)">
+      <circle r="28" class="hub-glow-ring" />
+      <circle r="22" class="hub-pulse" />
+      <circle r="15" class="hub-ring-outer" />
+      <circle r="9" class="hub-ring-inner" />
+      <circle r="5" class="hub-core" />
+    </g>
+
+    <!-- Hub 3: San Miguel (Oriental) -->
+    <g class="concentric-hub node-oriental" id="hubSanMiguel" transform="translate(820, 410)">
+      <circle r="28" class="hub-glow-ring" />
+      <circle r="22" class="hub-pulse" />
+      <circle r="15" class="hub-ring-outer" />
+      <circle r="9" class="hub-ring-inner" />
+      <circle r="5" class="hub-core" />
+    </g>
+
+    <!-- Hub 4: La Unión (Oriental) -->
+    <g class="concentric-hub node-oriental" id="hubLaUnion" transform="translate(984, 418)">
+      <circle r="28" class="hub-glow-ring" />
+      <circle r="22" class="hub-pulse" />
+      <circle r="15" class="hub-ring-outer" />
+      <circle r="9" class="hub-ring-inner" />
+      <circle r="5" class="hub-core" />
+    </g>
+  </g>
+</svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT US SECTION (Reorganizado según diseño de referencia)
+         ========================================================================== -->
+    <section class="section-about" id="nosotros">
+      <div class="container">
+        <div class="about-main-layout">
+          <!-- Columna Izquierda: Títulos + 3 Párrafos completos -->
+          <div class="about-text-col">
+            <span class="section-subtitle">¿QUIÉNES SOMOS?</span>
+            <h2 class="section-title">Grupo GH Strategy</h2>
+            <div class="about-paragraphs">
+              <p>Desde nuestra fundación en 2017, en <strong>Grupo GH Strategy</strong> hemos construido una trayectoria basada en la confianza, la eficiencia y el compromiso con nuestros clientes. Somos una empresa especializada en <strong>transporte y logística integral</strong>, enfocada en conectar organizaciones y brindar soluciones que optimicen sus operaciones y cadenas de distribución.</p>
+              <p>Entendemos que, en el sector logístico, <strong>cada entrega representa un compromiso</strong>. Por ello, trabajamos para ofrecer un servicio confiable, seguro y eficiente, adaptándonos a las necesidades específicas de cada cliente y operación.</p>
+              <p>Nuestro servicio se sustenta en tres pilares fundamentales: <strong>cumplimiento</strong>, garantizando los tiempos de entrega acordados; <strong>control y seguridad</strong>, mediante la supervisión y monitoreo constante de nuestras unidades; y <strong>calidad</strong>, asegurando el manejo responsable e íntegro de cada carga desde su origen hasta su destino.</p>
+              <p>En Grupo GH Strategy no solo transportamos mercancías; <strong>conectamos negocios, facilitamos operaciones y contribuimos al crecimiento de nuestros clientes</strong>, convirtiéndonos en un aliado estratégico para sus necesidades de transporte y logística.</p>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Imagen Grande (Arriba) + Tarjetas Misión y Visión (Abajo) -->
+          <div class="about-right-col">
+            <!-- Panel de Imagen Superior Derecha con Badge Flotante -->
+            <div class="about-image-panel">
+              <div class="about-badge-floating">
+                <span>Desde 2017: Conectando El Salvador</span>
+              </div>
+              <img src="assets/Camiones-Carretera.png" alt="Logística y Transporte Grupo GH Strategy" class="about-panel-img">
+            </div>
+
+            <!-- Tarjetas Inferiores Lado a Lado (Misión y Visión) -->
+            <div class="mv-grid">
+              <!-- Tarjeta Misión -->
+              <div class="mv-card">
+                <div class="mv-icon-wrapper">
+                  <svg class="mv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+                <h3>Misión</h3>
+                <p>Asegurar la confianza de nuestros clientes mediante un servicio de transporte eficiente, puntual y controlado.</p>
+              </div>
+
+              <!-- Tarjeta Visión -->
+              <div class="mv-card">
+                <div class="mv-icon-wrapper">
+                  <svg class="mv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <h3>Visión</h3>
+                <p>Convertirnos en el aliado estratégico de transporte más confiable para empresas a nivel nacional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT & FOOTER SECTION (Fondo Oficial contactanos.jpeg en Desktop & Móvil)
+         ========================================================================== -->
+    <section class="section-contact" id="contacto">
+      <div class="container contact-content-container">
+        <!-- Bloque de Texto Tarjeta Cristal Traslúcida (Contraste Perfecto en Móvil y Desktop) -->
+        <div class="contact-text-block">
+          <span class="tag-badge">GH EXPRESS</span>
+          <h2 class="contact-main-title">Entrega segura, EMPRESA TRANQUILA</h2>
+          <p class="contact-main-desc">Porque un buen servicio genera tranquilidad, nos encargamos de tus envíos con absoluto profesionalismo.</p>
+
+          <div class="contact-cta-block">
+            <span class="cta-subtitle">¿LISTO PARA MOVER TU OPERACIÓN?</span>
+            <h3 class="cta-title">Hablemos de tus próximas entregas.</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Contact Meta Banner (Unificado 100% Ancho Completo a Fondo Blanco) -->
+      <div class="footer-brand-banner-full">
+        <div class="container">
+          <!-- Fila Superior: Eslogan a la Izquierda, Redes al Centro, Datos a la Derecha -->
+          <div class="footer-banner-container">
+            <!-- Left: Eslogan en 1 sola línea horizontal -->
+            <div class="footer-slogan-block">
+              <span>CALIDAD, SUPERVISIÓN Y COMPROMISO.</span>
+            </div>
+
+            <!-- Center: 4 Redes Sociales Oficiales -->
+            <div class="footer-social-links">
+              <a href="https://wa.me/50369958735" target="_blank" rel="noopener" class="footer-social-icon" aria-label="WhatsApp GH Express">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/ghexpres_/" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram GH Express">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <a href="https://www.facebook.com/share/19V7JCme12/?mibextid=wwXIfr" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook GH Express">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://www.tiktok.com/@ghexpres?_r=1&_t=ZS-99XlTcMkKFp" target="_blank" rel="noopener" class="footer-social-icon" aria-label="TikTok GH Express">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.54-1.36 2.54-.07.98.36 1.97 1.08 2.65.98.92 2.45 1.17 3.66.6 1.05-.47 1.77-1.52 1.87-2.67.06-2.64.03-5.28.04-7.92.01-3.23.01-6.46 0-9.69z"/></svg>
+              </a>
+            </div>
+
+            <!-- Right: Grilla de 2 columnas con datos de contacto -->
+            <div class="footer-contact-grid">
+              <!-- Columna 1: Ubicación y Teléfono -->
+              <div class="footer-info-col">
+                <a href="https://maps.google.com/?q=San+Salvador,+El+Salvador" target="_blank" rel="noopener" class="footer-info-item" title="Ver ubicación en Google Maps">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>San Salvador - El Salvador</span>
+                </a>
+                <a href="https://wa.me/50369958735" target="_blank" rel="noopener" class="footer-info-item" title="Contactar por WhatsApp o Teléfono">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>(+503) 6995-8735</span>
+                </a>
+              </div>
+
+              <!-- Columna 2: Correo y Sitio Web -->
+              <div class="footer-info-col">
+                <a href="mailto:gh@grupoghstrategy.com" class="footer-info-item" title="Enviar correo electrónico">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>gh@grupoghstrategy.com</span>
+                </a>
+                <a href="https://www.grupoghstrategy.com" target="_blank" rel="noopener" class="footer-info-item" title="Visitar sitio web oficial">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                  <span>www.grupoghstrategy.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-fila Inferior: Copyright Incorporado en la Franja Blanca -->
+          <div class="footer-copyright-subrow">
+            <p>© 2026 Grupo GH Strategy (GH Express). Todos los derechos reservados. · Política de Privacidad · Términos de Servicio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- ==========================================================================
+       QUOTE REQUEST MODAL (Con isotipo / logotipo de la empresa)
+       ========================================================================== -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar modal">&times;</button>
+      
+      <div class="modal-header">
+        <!-- Logo Oficial Grupo GH Strategy (Azul Sin Fondo) -->
+        <div class="modal-logo">
+          <div class="brand-logo" style="cursor: default;">
+            <img src="assets/LOGO AZUL - SIN FONDO_Mesa de trabajo 1.png" alt="Grupo GH Strategy Logo" class="brand-logo-img modal-logo-img">
+          </div>
+        </div>
+        
+        <h3>Cotización de Operación</h3>
+        <p>Completa tus datos para enviarte una propuesta logística a la medida.</p>
+      </div>
+
+      <form id="quoteForm">
+        <div class="form-group">
+          <label for="inputEmpresa">Nombre de la Empresa *</label>
+          <input type="text" id="inputEmpresa" class="form-control" placeholder="Ej. Comercial Salvador S.A." required>
+        </div>
+
+        <div class="form-group">
+          <label for="inputContacto">Nombre de Contacto *</label>
+          <input type="text" id="inputContacto" class="form-control" placeholder="Ej. Carlos Mendoza" required>
+        </div>
+
+        <div class="form-group">
+          <label for="inputTelefono">Teléfono / WhatsApp *</label>
+          <input type="tel" id="inputTelefono" class="form-control" placeholder="Ej. 7000-0000" required>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail">Correo Electrónico *</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="carlos@empresa.sv" required>
+        </div>
+
+        <div class="form-group">
+          <label for="selectServicio">Servicio Requerido *</label>
+          <select id="selectServicio" class="form-control" required>
+            <option value="">Selecciona un servicio...</option>
+            <option value="distribucion_nacional">Distribución Nacional</option>
+            <option value="rutas_programadas">Rutas Programadas</option>
+            <option value="distribucion_empresarial">Distribución Empresarial</option>
+            <option value="flota_dedicada">Flota Dedicada</option>
+            <option value="logistica_inversa">Logística Inversa</option>
+          </select>
+        </div>
+
+        <!-- Google reCAPTCHA v2 (Casilla "No soy un robot") -->
+        <div class="form-group recaptcha-group">
+          <div class="g-recaptcha" data-sitekey="6LeQlogtAAAAANEN3AUWr4u9D_psbQSshSFAoNcZ" id="recaptchaWidget"></div>
+        </div>
+
+        <button type="submit" class="btn-submit">ENVIAR SOLICITUD</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DELIVERY TIME ESTIMATOR MODAL (Consulta tus Tiempos de Entrega)
+       ========================================================================== -->
+  <div class="modal-overlay" id="deliveryTimeModal">
+    <div class="modal-content delivery-modal-content">
+      <button class="modal-close" id="deliveryModalClose" aria-label="Cerrar modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-logo">
+          <div class="brand-logo" style="cursor: default;">
+            <img src="assets/LOGO AZUL - SIN FONDO_Mesa de trabajo 1.png" alt="Grupo GH Strategy Logo" class="brand-logo-img modal-logo-img">
+          </div>
+        </div>
+        
+        <h3 class="delivery-modal-title">Consulta tus tiempos de entrega</h3>
+        <p class="delivery-modal-subtitle">Selecciona el departamento de origen y el departamento de destino para conocer el tiempo estimado de entrega.</p>
+      </div>
+
+      <form id="deliveryTimeForm" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label for="selectOrigen" class="delivery-field-label">Departamento de origen</label>
+          <select id="selectOrigen" class="form-control delivery-select">
+            <option value="">Selecciona origen...</option>
+            <optgroup label="Occidente">
+              <option value="Ahuachapán">Ahuachapán</option>
+              <option value="Santa Ana">Santa Ana</option>
+              <option value="Sonsonate">Sonsonate</option>
+            </optgroup>
+            <optgroup label="Central">
+              <option value="La Libertad">La Libertad</option>
+              <option value="Chalatenango">Chalatenango</option>
+              <option value="San Salvador">San Salvador</option>
+              <option value="Cuscatlán">Cuscatlán</option>
+              <option value="La Paz">La Paz</option>
+              <option value="Cabañas">Cabañas</option>
+              <option value="San Vicente">San Vicente</option>
+            </optgroup>
+            <optgroup label="Oriente">
+              <option value="Usulután">Usulután</option>
+              <option value="San Miguel">San Miguel</option>
+              <option value="Morazán">Morazán</option>
+              <option value="La Unión">La Unión</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin-top: 16px;">
+          <label for="selectDestino" class="delivery-field-label">Departamento de destino</label>
+          <select id="selectDestino" class="form-control delivery-select">
+            <option value="">Selecciona destino...</option>
+            <optgroup label="Occidente">
+              <option value="Ahuachapán">Ahuachapán</option>
+              <option value="Santa Ana">Santa Ana</option>
+              <option value="Sonsonate">Sonsonate</option>
+            </optgroup>
+            <optgroup label="Central">
+              <option value="La Libertad">La Libertad</option>
+              <option value="Chalatenango">Chalatenango</option>
+              <option value="San Salvador">San Salvador</option>
+              <option value="Cuscatlán">Cuscatlán</option>
+              <option value="La Paz">La Paz</option>
+              <option value="Cabañas">Cabañas</option>
+              <option value="San Vicente">San Vicente</option>
+            </optgroup>
+            <optgroup label="Oriente">
+              <option value="Usulután">Usulután</option>
+              <option value="San Miguel">San Miguel</option>
+              <option value="Morazán">Morazán</option>
+              <option value="La Unión">La Unión</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Tarjeta de Resultado Dinámica -->
+        <div id="deliveryResultCard" class="delivery-result-card placeholder-state">
+          <p class="result-prompt-text">Selecciona departamento de origen y destino para calcular el tiempo estimado.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification">
+    ¡Gracias! Tu solicitud ha sido enviada con éxito.
+  </div>
+
+  <!-- ==========================================================================
+       EMAILJS BROWSER SDK (Librería Oficial para envío de correos desde el navegador)
+       ========================================================================== -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Script interactivo principal (js/main.js) donde se configuran tus 3 credenciales de EmailJS -->
+  <script src="js/main.js?v=19.0"></script>
+</body>
+</html>
